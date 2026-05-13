@@ -188,7 +188,7 @@
     "id": "supporter_tier_feedback",
     "title": "Supporter Tier Feedback",
     "description": "Help shape future supporter tiers for Lusty Looters. Tell us what feels valuable, what perks you would like included, what would make a tier feel worth supporting, and anything you think should be changed before tiers are finalised.",
-    "reward": 500,
+    "reward": 1500,
     "enabled": true,
     "repeatDays": 30,
     "allowedDiscordIds": [],
