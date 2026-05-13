@@ -1,0 +1,304 @@
+[
+  {
+    "id": "general_feedback",
+    "title": "General Feedback",
+    "description": "Share general feedback, suggestions, concerns, or ideas for Lusty Looters at any time. Discord login and a linked ARK account are required. This form does not award Gold Nuggets.",
+    "reward": 0,
+    "enabled": true,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": true,
+    "permanent": true,
+    "questions": [
+      {
+        "key": "feedback_area",
+        "label": "What is your feedback about?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "General server feedback",
+          "Website",
+          "Mods",
+          "Rates or settings",
+          "Events",
+          "Rules or clarity",
+          "Support experience",
+          "Other"
+        ]
+      },
+      {
+        "key": "feedback_message",
+        "label": "Tell us your feedback.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "improvement_idea",
+        "label": "What would you change or improve?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1000,
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "server_ping_feedback",
+    "title": "Server Ping Feedback",
+    "description": "Tell us about your server ping, lag, rubberbanding, delayed actions, or connection issues so staff can check problem areas.",
+    "reward": 500,
+    "enabled": true,
+    "repeatDays": 30,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "server_name",
+        "label": "Which server or map are you having ping issues on?",
+        "type": "text",
+        "required": true,
+        "maxLength": 120,
+        "options": []
+      },
+      {
+        "key": "ping_rating",
+        "label": "How bad has the ping or lag been?",
+        "type": "rating",
+        "required": true,
+        "maxLength": 180,
+        "options": []
+      },
+      {
+        "key": "issue_type",
+        "label": "What kind of issue are you noticing?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "High ping",
+          "Rubberbanding",
+          "Delayed crafting",
+          "Delayed inventory",
+          "Delayed dino movement",
+          "Crashes",
+          "Disconnects",
+          "Other"
+        ]
+      },
+      {
+        "key": "when_it_happens",
+        "label": "When does it usually happen?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "All the time",
+          "During busy hours",
+          "Near large bases",
+          "During boss fights",
+          "During events",
+          "After restarts",
+          "Randomly"
+        ]
+      },
+      {
+        "key": "details",
+        "label": "Describe what happens and where you notice it most.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 900,
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "dino_wipe_feedback",
+    "title": "Dino Wipe Feedback",
+    "description": "Tell us whether wild dino wipes should happen on the cluster, how often they should happen, and what problems they would help solve.",
+    "reward": 500,
+    "enabled": true,
+    "repeatDays": 30,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "should_wipe",
+        "label": "Should regular wild dino wipes happen?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes",
+          "No",
+          "Only when needed",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "wipe_frequency",
+        "label": "How often should wild dino wipes happen?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Daily",
+          "Every few days",
+          "Weekly",
+          "Every two weeks",
+          "Monthly",
+          "Only when spawns are broken",
+          "Never"
+        ]
+      },
+      {
+        "key": "reason",
+        "label": "Why do you think dino wipes should or should not happen?",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 900,
+        "options": []
+      },
+      {
+        "key": "problem_areas",
+        "label": "Are there any maps or areas where wild spawns feel broken?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 700,
+        "options": []
+      },
+      {
+        "key": "concerns",
+        "label": "Do you have any concerns about regular wild dino wipes?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 700,
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "supporter_tier_feedback",
+    "title": "Supporter Tier Feedback",
+    "description": "Help shape future supporter tiers for Lusty Looters. Tell us what feels valuable, what perks you would like included, what would make a tier feel worth supporting, and anything you think should be changed before tiers are finalised.",
+    "reward": 500,
+    "enabled": true,
+    "repeatDays": 30,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "tier_interest",
+        "label": "How interested are you in supporter tiers?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very interested",
+          "Somewhat interested",
+          "I might consider one",
+          "Not interested right now",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "tier_value_rating",
+        "label": "How important is it that supporter tiers feel rewarding without becoming pay-to-win?",
+        "type": "rating",
+        "required": true,
+        "maxLength": 180,
+        "options": []
+      },
+      {
+        "key": "desired_tier_contents",
+        "label": "What would you personally like to see included inside supporter tiers?",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "most_appealing_rewards",
+        "label": "Which type of supporter reward appeals to you most?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Gold Nuggets",
+          "Breeding or convenience potions",
+          "Cosmetic rewards",
+          "Exclusive Discord perks",
+          "In-game quality-of-life benefits",
+          "Monthly claimable bundles",
+          "Tier-exclusive shop items",
+          "I care more about supporting the server than rewards",
+          "Other"
+        ]
+      },
+      {
+        "key": "specific_reward_ideas",
+        "label": "Are there any specific items, bonuses, monthly rewards, commands, or perks you would want added to a tier?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "what_feels_fair",
+        "label": "What kind of rewards feel fair for supporter tiers without making non-supporters feel left behind?",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "what_to_avoid",
+        "label": "Are there any rewards or perks you think should not be included in supporter tiers?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1000,
+        "options": []
+      },
+      {
+        "key": "tier_structure_preference",
+        "label": "What kind of supporter tier structure would you prefer?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "A few simple tiers with clear rewards",
+          "Several tiers with more upgrade steps",
+          "Low-cost tiers with smaller benefits",
+          "Higher tiers with larger monthly bundles",
+          "A mix of all of the above",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "reason_to_support",
+        "label": "What would make you most likely to purchase or keep a supporter tier?",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "additional_tier_feedback",
+        "label": "Any other thoughts, concerns, or ideas for supporter tiers?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1200,
+        "options": []
+      }
+    ]
+  }
+]
