@@ -118,6 +118,102 @@
     ]
   },
   {
+    "id": "network_reset_feedback",
+    "title": "Network Reset Feedback",
+    "description": "Following the recent network reset during the server restart, let us know whether your connection, ping, or overall server stability has felt better. This feedback helps us decide whether the reset made a noticeable difference.",
+    "reward": 2000,
+    "enabled": true,
+    "repeatDays": 30,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "map_tested",
+        "label": "Which server or map have you played on since the network reset?",
+        "type": "text",
+        "required": true,
+        "maxLength": 120,
+        "options": []
+      },
+      {
+        "key": "played_after_reset",
+        "label": "Have you played long enough after the network reset to notice a difference?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes, I have played for a decent amount of time",
+          "Only briefly",
+          "Not much yet, but I noticed something",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "connectivity_improvement",
+        "label": "Has your overall connection to the servers felt better since the network reset?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Much better",
+          "Slightly better",
+          "No noticeable change",
+          "Worse",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "ping_improvement",
+        "label": "Has your ping improved or felt more stable?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes, my ping is lower",
+          "Yes, my ping feels more stable",
+          "A little, but not significantly",
+          "No noticeable change",
+          "It feels worse",
+          "I do not usually monitor my ping"
+        ]
+      },
+      {
+        "key": "issue_changes",
+        "label": "Have any connection issues improved since the reset?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes, disconnects are less common",
+          "Yes, lag spikes feel reduced",
+          "Yes, rubberbanding feels reduced",
+          "Yes, actions feel less delayed",
+          "No issues have noticeably improved",
+          "I was not having issues before",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "remaining_issues",
+        "label": "Are you still noticing any ping, lag, disconnect, or connectivity issues?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 900,
+        "options": []
+      },
+      {
+        "key": "overall_feedback",
+        "label": "Tell us anything else you noticed after the network reset.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      }
+    ]
+  },
+  {
     "id": "dino_wipe_feedback",
     "title": "Dino Wipe Feedback",
     "description": "Tell us whether wild dino wipes should happen on the cluster, how often they should happen, and what problems they would help solve.",
