@@ -396,5 +396,137 @@
         "options": []
       }
     ]
+  },
+  {
+    "id": "long_join_loading_feedback",
+    "title": "Long Join Loading Feedback",
+    "description": "Tell us about long loading times when joining a server, especially if structures, bases, dinos, or nearby areas take a long time to appear. This helps staff compare whether the issue is linked to specific maps, areas, player hardware, or server behaviour.",
+    "reward": 5000,
+    "enabled": true,
+    "repeatDays": 30,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "server_name",
+        "label": "Which server or map have you experienced this on?",
+        "type": "text",
+        "required": true,
+        "maxLength": 120,
+        "options": []
+      },
+      {
+        "key": "platform",
+        "label": "What platform are you playing on?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "PC",
+          "Xbox Series X",
+          "Xbox Series S",
+          "PlayStation 5",
+          "Other",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "cpu_model",
+        "label": "What CPU or processor does your device have? If you are on console, write your console model or unsure.",
+        "type": "text",
+        "required": true,
+        "maxLength": 180,
+        "options": []
+      },
+      {
+        "key": "storage_type",
+        "label": "Do you know what type of storage ARK is installed on?",
+        "type": "select",
+        "required": false,
+        "maxLength": 180,
+        "options": [
+          "SSD",
+          "HDD",
+          "External drive",
+          "Console internal storage",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "loading_issue_type",
+        "label": "What loading issue are you noticing most?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Server takes a long time to join",
+          "I load in but structures take ages to appear",
+          "Bases load in slowly around me",
+          "Dinos or players take ages to appear",
+          "Inventory or UI takes ages to respond after joining",
+          "Multiple of the above",
+          "Other"
+        ]
+      },
+      {
+        "key": "loading_severity",
+        "label": "How bad is the loading issue?",
+        "type": "rating",
+        "required": true,
+        "maxLength": 180,
+        "options": []
+      },
+      {
+        "key": "how_long_structures_take",
+        "label": "Roughly how long do structures or bases take to fully load after you join?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Less than 30 seconds",
+          "30 seconds to 1 minute",
+          "1 to 3 minutes",
+          "3 to 5 minutes",
+          "More than 5 minutes",
+          "They sometimes do not load properly at all",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "when_it_happens",
+        "label": "When does this usually happen?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Every time I join",
+          "Only the first time I join after opening ARK",
+          "After server restarts",
+          "During busy hours",
+          "Near large bases",
+          "On specific maps only",
+          "Randomly",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "location_or_area",
+        "label": "Where do you notice it most? Include base area, biome, teleport area, spawn point, or nearby landmarks if possible.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 900,
+        "options": []
+      },
+      {
+        "key": "details",
+        "label": "Describe what happens when you join and what takes the longest to load.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      }
+    ]
   }
 ]
