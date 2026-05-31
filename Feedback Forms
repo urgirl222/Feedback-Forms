@@ -214,10 +214,10 @@
     ]
   },
   {
-    "id": "dino_wipe_feedback",
-    "title": "Dino Wipe Feedback",
-    "description": "Tell us whether wild dino wipes should happen on the cluster, how often they should happen, and what problems they would help solve.",
-    "reward": 500,
+    "id": "preferred_restart_time_feedback",
+    "title": "Preferred Restart Time Feedback",
+    "description": "Tell us what daily restart time would work best for you and whether the current restart time causes issues. This helps staff choose a restart window that is less disruptive for players.",
+    "reward": 1000,
     "enabled": true,
     "repeatDays": 30,
     "allowedDiscordIds": [],
@@ -226,56 +226,84 @@
     "permanent": false,
     "questions": [
       {
-        "key": "should_wipe",
-        "label": "Should regular wild dino wipes happen?",
+        "key": "current_restart_impact",
+        "label": "How does the current restart time affect you?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Yes",
-          "No",
-          "Only when needed",
+          "It works well for me",
+          "It is usually okay",
+          "It is sometimes inconvenient",
+          "It is often inconvenient",
+          "I am not usually online then",
           "Unsure"
         ]
       },
       {
-        "key": "wipe_frequency",
-        "label": "How often should wild dino wipes happen?",
+        "key": "preferred_restart_time",
+        "label": "What restart time would you prefer? Times are in Western Australia time.",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Daily",
-          "Every few days",
-          "Weekly",
-          "Every two weeks",
-          "Monthly",
-          "Only when spawns are broken",
-          "Never"
+          "8 AM",
+          "10 AM",
+          "12 PM",
+          "2 PM",
+          "4 PM",
+          "6 PM",
+          "8 PM",
+          "10 PM",
+          "Other"
         ]
       },
       {
-        "key": "reason",
-        "label": "Why do you think dino wipes should or should not happen?",
+        "key": "usual_play_time",
+        "label": "When do you usually play on the cluster?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Morning",
+          "Midday",
+          "Afternoon",
+          "Evening",
+          "Late night",
+          "Weekends mostly",
+          "It changes often"
+        ]
+      },
+      {
+        "key": "restart_problem_type",
+        "label": "What problem does the restart time cause, if any?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Interrupts normal gameplay",
+          "Interrupts breeding or raising babies",
+          "Interrupts boss fights or events",
+          "Interrupts farming or building",
+          "Makes transfers inconvenient",
+          "It does not cause issues for me",
+          "Other"
+        ]
+      },
+      {
+        "key": "preferred_restart_reason",
+        "label": "Why would your preferred restart time work better?",
         "type": "textarea",
         "required": true,
+        "maxLength": 1000,
+        "options": []
+      },
+      {
+        "key": "extra_restart_feedback",
+        "label": "Any other feedback about restart times, warnings, or timing?",
+        "type": "textarea",
+        "required": false,
         "maxLength": 900,
-        "options": []
-      },
-      {
-        "key": "problem_areas",
-        "label": "Are there any maps or areas where wild spawns feel broken?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 700,
-        "options": []
-      },
-      {
-        "key": "concerns",
-        "label": "Do you have any concerns about regular wild dino wipes?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 700,
         "options": []
       }
     ]
