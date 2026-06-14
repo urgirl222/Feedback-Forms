@@ -118,192 +118,239 @@
     ]
   },
   {
-    "id": "network_reset_feedback",
-    "title": "Network Reset Feedback",
-    "description": "Following the recent network reset during the server restart, let us know whether your connection, ping, or overall server stability has felt better. This feedback helps us decide whether the reset made a noticeable difference.",
-    "reward": 2000,
+    "id": "missing_tribe_report",
+    "title": "Missing Tribe Report",
+    "description": "Report when your character logs in and is no longer inside the expected tribe. Do not create a new tribe, join another tribe, demolish anything, claim anything, or transfer again until staff checks it. Discord login and a linked ARK account are required.",
+    "reward": 0,
     "enabled": true,
-    "repeatDays": 30,
+    "repeatDays": 0,
     "allowedDiscordIds": [],
     "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
+    "allowRepeatSubmissions": true,
+    "permanent": true,
     "questions": [
       {
-        "key": "map_tested",
-        "label": "Which server or map have you played on since the network reset?",
+        "key": "do_not_change_state_confirm",
+        "label": "Confirm you have not created a new tribe, joined another tribe, claimed anything, demolished anything, or transferred again since noticing the issue.",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Confirmed, I have not changed anything",
+          "I already changed something and will explain below",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "server_name",
+        "label": "Which server or map did you log into when you noticed you were missing from your tribe?",
         "type": "text",
         "required": true,
         "maxLength": 120,
         "options": []
       },
       {
-        "key": "played_after_reset",
-        "label": "Have you played long enough after the network reset to notice a difference?",
+        "key": "character_name",
+        "label": "What is your in-game character name?",
+        "type": "text",
+        "required": true,
+        "maxLength": 120,
+        "options": []
+      },
+      {
+        "key": "eos_or_account_id",
+        "label": "What is your EOS ID or linked account ID, if you know it?",
+        "type": "text",
+        "required": false,
+        "maxLength": 160,
+        "options": []
+      },
+      {
+        "key": "platform",
+        "label": "What platform are you playing on?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Yes, I have played for a decent amount of time",
-          "Only briefly",
-          "Not much yet, but I noticed something",
+          "Steam",
+          "Epic",
+          "Xbox",
+          "PlayStation",
+          "Windows Store",
+          "Other",
           "Unsure"
         ]
       },
       {
-        "key": "connectivity_improvement",
-        "label": "Has your overall connection to the servers felt better since the network reset?",
+        "key": "tribe_name",
+        "label": "What tribe should you be in?",
+        "type": "text",
+        "required": true,
+        "maxLength": 140,
+        "options": []
+      },
+      {
+        "key": "tribe_role",
+        "label": "Were you the tribe owner, admin, or member?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Much better",
-          "Slightly better",
-          "No noticeable change",
-          "Worse",
+          "Owner",
+          "Admin",
+          "Member",
           "Unsure"
         ]
       },
       {
-        "key": "ping_improvement",
-        "label": "Has your ping improved or felt more stable?",
-        "type": "select",
+        "key": "last_in_tribe",
+        "label": "When were you last definitely inside the tribe? Include date, approximate time, and server/map if possible.",
+        "type": "textarea",
         "required": true,
-        "maxLength": 180,
-        "options": [
-          "Yes, my ping is lower",
-          "Yes, my ping feels more stable",
-          "A little, but not significantly",
-          "No noticeable change",
-          "It feels worse",
-          "I do not usually monitor my ping"
-        ]
+        "maxLength": 700,
+        "options": []
       },
       {
-        "key": "issue_changes",
-        "label": "Have any connection issues improved since the reset?",
+        "key": "first_noticed_missing",
+        "label": "When did you first notice you were not in the tribe? Include date, approximate time, and server/map.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 700,
+        "options": []
+      },
+      {
+        "key": "recent_transfer",
+        "label": "Did you transfer servers shortly before this happened?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Yes, disconnects are less common",
-          "Yes, lag spikes feel reduced",
-          "Yes, rubberbanding feels reduced",
-          "Yes, actions feel less delayed",
-          "No issues have noticeably improved",
-          "I was not having issues before",
+          "No",
+          "Yes, I transferred before noticing it",
+          "Yes, I transferred after noticing it",
+          "I crashed or disconnected during transfer",
           "Unsure"
         ]
       },
       {
-        "key": "remaining_issues",
-        "label": "Are you still noticing any ping, lag, disconnect, or connectivity issues?",
+        "key": "transfer_details",
+        "label": "If you transferred, where did you transfer from and to? Include approximate time.",
         "type": "textarea",
         "required": false,
+        "maxLength": 800,
+        "options": []
+      },
+      {
+        "key": "crash_death_or_upload",
+        "label": "Did you crash, die, upload/download, get kicked, or disconnect shortly before noticing the issue?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "No",
+          "Crashed",
+          "Died",
+          "Uploaded or downloaded character/items",
+          "Got kicked or disconnected",
+          "Multiple of these",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "beds_visible",
+        "label": "Can you still see and spawn on your tribe beds?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes",
+          "No",
+          "Some beds only",
+          "I have not checked",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "access_status",
+        "label": "Can you access tribe structures, dinos, vaults, generators, or turrets?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes, I can access everything",
+          "I can access some things only",
+          "No, everything acts enemy-owned",
+          "I have not checked",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "ownership_text",
+        "label": "What ownership text do tribe structures or dinos show?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Still shows my tribe name",
+          "Shows personally owned",
+          "Shows another tribe",
+          "Shows enemy owned",
+          "I cannot get close enough to check",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "other_members_affected",
+        "label": "Are other members of the same tribe also missing from the tribe?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "No, only me",
+          "Yes, multiple members",
+          "Yes, the whole tribe",
+          "I am the only member",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "new_character_or_tribe",
+        "label": "Have you made a new character, renamed your character, joined another tribe, or created a new tribe since noticing this?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "No",
+          "Created a new character",
+          "Renamed my character",
+          "Joined another tribe",
+          "Created a new tribe",
+          "Multiple of these",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "base_location",
+        "label": "Where is your base? Include map, rough coords, biome, teleport area, or nearby landmarks.",
+        "type": "textarea",
+        "required": true,
         "maxLength": 900,
         "options": []
       },
       {
-        "key": "overall_feedback",
-        "label": "Tell us anything else you noticed after the network reset.",
+        "key": "screenshots_or_proof",
+        "label": "Add screenshot links or describe what your screenshots show. Useful screenshots: implant, tribe manager, structure/dino ownership text, and map/server.",
         "type": "textarea",
-        "required": true,
+        "required": false,
         "maxLength": 1200,
         "options": []
-      }
-    ]
-  },
-  {
-    "id": "preferred_restart_time_feedback",
-    "title": "Preferred Restart Time Feedback",
-    "description": "Tell us what daily restart time would work best for you and whether the current restart time causes issues. This helps staff choose a restart window that is less disruptive for players.",
-    "reward": 1000,
-    "enabled": true,
-    "repeatDays": 30,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "current_restart_impact",
-        "label": "How does the current restart time affect you?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "It works well for me",
-          "It is usually okay",
-          "It is sometimes inconvenient",
-          "It is often inconvenient",
-          "I am not usually online then",
-          "Unsure"
-        ]
       },
       {
-        "key": "preferred_restart_time",
-        "label": "What restart time would you prefer? Times are in Western Australia time.",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "8 AM",
-          "10 AM",
-          "12 PM",
-          "2 PM",
-          "4 PM",
-          "6 PM",
-          "8 PM",
-          "10 PM",
-          "Other"
-        ]
-      },
-      {
-        "key": "usual_play_time",
-        "label": "When do you usually play on the cluster?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Morning",
-          "Midday",
-          "Afternoon",
-          "Evening",
-          "Late night",
-          "Weekends mostly",
-          "It changes often"
-        ]
-      },
-      {
-        "key": "restart_problem_type",
-        "label": "What problem does the restart time cause, if any?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Interrupts normal gameplay",
-          "Interrupts breeding or raising babies",
-          "Interrupts boss fights or events",
-          "Interrupts farming or building",
-          "Makes transfers inconvenient",
-          "It does not cause issues for me",
-          "Other"
-        ]
-      },
-      {
-        "key": "preferred_restart_reason",
-        "label": "Why would your preferred restart time work better?",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "extra_restart_feedback",
-        "label": "Any other feedback about restart times, warnings, or timing?",
+        "key": "extra_details",
+        "label": "Explain anything else staff should know, especially if anything changed after you noticed the issue.",
         "type": "textarea",
         "required": false,
-        "maxLength": 900,
+        "maxLength": 1200,
         "options": []
       }
     ]
@@ -420,138 +467,6 @@
         "label": "Any other thoughts, concerns, or ideas for supporter tiers?",
         "type": "textarea",
         "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ]
-  },
-  {
-    "id": "long_join_loading_feedback",
-    "title": "Long Join Loading Feedback",
-    "description": "Tell us about long loading times when joining a server, especially if structures, bases, dinos, or nearby areas take a long time to appear. This helps staff compare whether the issue is linked to specific maps, areas, player hardware, or server behaviour.",
-    "reward": 5000,
-    "enabled": true,
-    "repeatDays": 30,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "server_name",
-        "label": "Which server or map have you experienced this on?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "platform",
-        "label": "What platform are you playing on?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "PC",
-          "Xbox Series X",
-          "Xbox Series S",
-          "PlayStation 5",
-          "Other",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "cpu_model",
-        "label": "What CPU or processor does your device have? If you are on console, write your console model or unsure.",
-        "type": "text",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "storage_type",
-        "label": "Do you know what type of storage ARK is installed on?",
-        "type": "select",
-        "required": false,
-        "maxLength": 180,
-        "options": [
-          "SSD",
-          "HDD",
-          "External drive",
-          "Console internal storage",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "loading_issue_type",
-        "label": "What loading issue are you noticing most?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Server takes a long time to join",
-          "I load in but structures take ages to appear",
-          "Bases load in slowly around me",
-          "Dinos or players take ages to appear",
-          "Inventory or UI takes ages to respond after joining",
-          "Multiple of the above",
-          "Other"
-        ]
-      },
-      {
-        "key": "loading_severity",
-        "label": "How bad is the loading issue?",
-        "type": "rating",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "how_long_structures_take",
-        "label": "Roughly how long do structures or bases take to fully load after you join?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Less than 30 seconds",
-          "30 seconds to 1 minute",
-          "1 to 3 minutes",
-          "3 to 5 minutes",
-          "More than 5 minutes",
-          "They sometimes do not load properly at all",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "when_it_happens",
-        "label": "When does this usually happen?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Every time I join",
-          "Only the first time I join after opening ARK",
-          "After server restarts",
-          "During busy hours",
-          "Near large bases",
-          "On specific maps only",
-          "Randomly",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "location_or_area",
-        "label": "Where do you notice it most? Include base area, biome, teleport area, spawn point, or nearby landmarks if possible.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 900,
-        "options": []
-      },
-      {
-        "key": "details",
-        "label": "Describe what happens when you join and what takes the longest to load.",
-        "type": "textarea",
-        "required": true,
         "maxLength": 1200,
         "options": []
       }
