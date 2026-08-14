@@ -47,12 +47,132 @@
     ]
   },
   {
-    "id": "server_ping_feedback",
-    "title": "Server Ping Feedback",
-    "description": "Tell us about your server ping, lag, rubberbanding, delayed actions, or connection issues so staff can check problem areas.",
-    "reward": 500,
+    "id": "quest_ideas",
+    "title": "Quest Ideas",
+    "description": "Submit a detailed quest idea for Lusty Looters. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "reward": 5000,
     "enabled": true,
-    "repeatDays": 30,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "quest_name",
+        "label": "What would you call this quest?",
+        "type": "text",
+        "required": true,
+        "maxLength": 120,
+        "options": []
+      },
+      {
+        "key": "quest_type",
+        "label": "What type of quest is it?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Exploration",
+          "Creature hunting or taming",
+          "Boss or combat",
+          "Building or crafting",
+          "Collection or delivery",
+          "Tribe or co-op",
+          "Puzzle or mystery",
+          "Event quest",
+          "Other"
+        ]
+      },
+      {
+        "key": "quest_concept",
+        "label": "Explain the quest idea and what makes it interesting.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1600,
+        "options": []
+      },
+      {
+        "key": "quest_steps",
+        "label": "What would players need to do to complete the quest? List the main steps or objectives.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1600,
+        "options": []
+      },
+      {
+        "key": "map_or_location",
+        "label": "Should this quest use a particular map, biome, cave, arena, or location?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 700,
+        "options": []
+      },
+      {
+        "key": "difficulty",
+        "label": "How difficult should the quest be?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Beginner",
+          "Easy",
+          "Medium",
+          "Hard",
+          "Endgame",
+          "Difficulty should scale",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "repeatability",
+        "label": "How often should players be able to complete it?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Once per player",
+          "Repeatable at any time",
+          "Daily",
+          "Weekly",
+          "Monthly",
+          "During events only",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "suggested_rewards",
+        "label": "What rewards should players receive for completing it?",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1000,
+        "options": []
+      },
+      {
+        "key": "balance_or_exploits",
+        "label": "Could the quest or its rewards be exploited? Explain any limits that might be needed.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1000,
+        "options": []
+      },
+      {
+        "key": "additional_details",
+        "label": "Add any other details that would help us understand or build the quest.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1200,
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "server_ping_feedback",
+    "title": "How’s the Server Ping?",
+    "description": "Tell us how the server connection feels from your location. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "reward": 5000,
+    "enabled": true,
+    "repeatDays": 0,
     "allowedDiscordIds": [],
     "publicSubmission": false,
     "allowRepeatSubmissions": false,
@@ -60,108 +180,17 @@
     "questions": [
       {
         "key": "server_name",
-        "label": "Which server or map are you having ping issues on?",
+        "label": "Which server or map did you test?",
         "type": "text",
         "required": true,
         "maxLength": 120,
         "options": []
       },
       {
-        "key": "ping_rating",
-        "label": "How bad has the ping or lag been?",
-        "type": "rating",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "issue_type",
-        "label": "What kind of issue are you noticing?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "High ping",
-          "Rubberbanding",
-          "Delayed crafting",
-          "Delayed inventory",
-          "Delayed dino movement",
-          "Crashes",
-          "Disconnects",
-          "Other"
-        ]
-      },
-      {
-        "key": "when_it_happens",
-        "label": "When does it usually happen?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "All the time",
-          "During busy hours",
-          "Near large bases",
-          "During boss fights",
-          "During events",
-          "After restarts",
-          "Randomly"
-        ]
-      },
-      {
-        "key": "details",
-        "label": "Describe what happens and where you notice it most.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 900,
-        "options": []
-      }
-    ]
-  },
-  {
-    "id": "missing_tribe_report",
-    "title": "Missing Tribe Report",
-    "description": "Report when your character logs in and is no longer inside the expected tribe. Do not create a new tribe, join another tribe, demolish anything, claim anything, or transfer again until staff checks it. Discord login and a linked ARK account are required.",
-    "reward": 1000,
-    "enabled": true,
-    "repeatDays": 1,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": true,
-    "permanent": true,
-    "questions": [
-      {
-        "key": "do_not_change_state_confirm",
-        "label": "Confirm you have not created a new tribe, joined another tribe, claimed anything, demolished anything, or transferred again since noticing the issue.",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Confirmed, I have not changed anything",
-          "I already changed something and will explain below",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "server_name",
-        "label": "Which server or map did you log into when you noticed you were missing from your tribe?",
+        "key": "player_location",
+        "label": "What city, state, or country are you connecting from?",
         "type": "text",
         "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "character_name",
-        "label": "What is your in-game character name?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "eos_or_account_id",
-        "label": "What is your EOS ID or linked account ID, if you know it?",
-        "type": "text",
-        "required": false,
         "maxLength": 160,
         "options": []
       },
@@ -177,296 +206,92 @@
           "Xbox",
           "PlayStation",
           "Windows Store",
+          "Other"
+        ]
+      },
+      {
+        "key": "connection_type",
+        "label": "How is your gaming device connected to the internet?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Ethernet",
+          "Wi-Fi",
+          "Mobile data or hotspot",
           "Other",
           "Unsure"
         ]
       },
       {
-        "key": "tribe_name",
-        "label": "What tribe should you be in?",
+        "key": "displayed_ping",
+        "label": "What ping does the server browser or in-game display usually show?",
         "type": "text",
         "required": true,
-        "maxLength": 140,
+        "maxLength": 120,
         "options": []
       },
       {
-        "key": "tribe_role",
-        "label": "Were you the tribe owner, admin, or member?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Owner",
-          "Admin",
-          "Member",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "last_in_tribe",
-        "label": "When were you last definitely inside the tribe? Include date, approximate time, and server/map if possible.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 700,
-        "options": []
-      },
-      {
-        "key": "first_noticed_missing",
-        "label": "When did you first notice you were not in the tribe? Include date, approximate time, and server/map.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 700,
-        "options": []
-      },
-      {
-        "key": "recent_transfer",
-        "label": "Did you transfer servers shortly before this happened?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "No",
-          "Yes, I transferred before noticing it",
-          "Yes, I transferred after noticing it",
-          "I crashed or disconnected during transfer",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "transfer_details",
-        "label": "If you transferred, where did you transfer from and to? Include approximate time.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 800,
-        "options": []
-      },
-      {
-        "key": "crash_death_or_upload",
-        "label": "Did you crash, die, upload/download, get kicked, or disconnect shortly before noticing the issue?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "No",
-          "Crashed",
-          "Died",
-          "Uploaded or downloaded character/items",
-          "Got kicked or disconnected",
-          "Multiple of these",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "beds_visible",
-        "label": "Can you still see and spawn on your tribe beds?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Yes",
-          "No",
-          "Some beds only",
-          "I have not checked",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "access_status",
-        "label": "Can you access tribe structures, dinos, vaults, generators, or turrets?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Yes, I can access everything",
-          "I can access some things only",
-          "No, everything acts enemy-owned",
-          "I have not checked",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "ownership_text",
-        "label": "What ownership text do tribe structures or dinos show?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Still shows my tribe name",
-          "Shows personally owned",
-          "Shows another tribe",
-          "Shows enemy owned",
-          "I cannot get close enough to check",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "other_members_affected",
-        "label": "Are other members of the same tribe also missing from the tribe?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "No, only me",
-          "Yes, multiple members",
-          "Yes, the whole tribe",
-          "I am the only member",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "new_character_or_tribe",
-        "label": "Have you made a new character, renamed your character, joined another tribe, or created a new tribe since noticing this?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "No",
-          "Created a new character",
-          "Renamed my character",
-          "Joined another tribe",
-          "Created a new tribe",
-          "Multiple of these",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "base_location",
-        "label": "Where is your base? Include map, rough coords, biome, teleport area, or nearby landmarks.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 900,
-        "options": []
-      },
-      {
-        "key": "screenshots_or_proof",
-        "label": "Add screenshot links or describe what your screenshots show. Useful screenshots: implant, tribe manager, structure/dino ownership text, and map/server.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "extra_details",
-        "label": "Explain anything else staff should know, especially if anything changed after you noticed the issue.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ]
-  },
-  {
-    "id": "supporter_tier_feedback",
-    "title": "Supporter Tier Feedback",
-    "description": "Help shape future supporter tiers for Lusty Looters. Tell us what feels valuable, what perks you would like included, what would make a tier feel worth supporting, and anything you think should be changed before tiers are finalised.",
-    "reward": 1500,
-    "enabled": true,
-    "repeatDays": 30,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "tier_interest",
-        "label": "How interested are you in supporter tiers?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Very interested",
-          "Somewhat interested",
-          "I might consider one",
-          "Not interested right now",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "tier_value_rating",
-        "label": "How important is it that supporter tiers feel rewarding without becoming pay-to-win?",
+        "key": "connection_rating",
+        "label": "How would you rate the overall server connection?",
         "type": "rating",
         "required": true,
         "maxLength": 180,
         "options": []
       },
       {
-        "key": "desired_tier_contents",
-        "label": "What would you personally like to see included inside supporter tiers?",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1400,
-        "options": []
-      },
-      {
-        "key": "most_appealing_rewards",
-        "label": "Which type of supporter reward appeals to you most?",
+        "key": "issue_type",
+        "label": "What connection issue do you notice most?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Gold Nuggets",
-          "Breeding or convenience potions",
-          "Cosmetic rewards",
-          "Exclusive Discord perks",
-          "In-game quality-of-life benefits",
-          "Monthly claimable bundles",
-          "Tier-exclusive shop items",
-          "I care more about supporting the server than rewards",
+          "No noticeable issues",
+          "High ping",
+          "Ping spikes",
+          "Rubberbanding",
+          "Delayed actions or inventories",
+          "Disconnects",
+          "Crashes",
           "Other"
         ]
       },
       {
-        "key": "specific_reward_ideas",
-        "label": "Are there any specific items, bonuses, monthly rewards, commands, or perks you would want added to a tier?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1400,
-        "options": []
-      },
-      {
-        "key": "what_feels_fair",
-        "label": "What kind of rewards feel fair for supporter tiers without making non-supporters feel left behind?",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "what_to_avoid",
-        "label": "Are there any rewards or perks you think should not be included in supporter tiers?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "tier_structure_preference",
-        "label": "What kind of supporter tier structure would you prefer?",
+        "key": "when_it_happens",
+        "label": "When do you usually notice the issue?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "A few simple tiers with clear rewards",
-          "Several tiers with more upgrade steps",
-          "Low-cost tiers with smaller benefits",
-          "Higher tiers with larger monthly bundles",
-          "A mix of all of the above",
-          "Unsure"
+          "I do not notice any issues",
+          "All the time",
+          "During busy hours",
+          "Near large bases",
+          "During boss fights or events",
+          "After restarts",
+          "Randomly"
         ]
       },
       {
-        "key": "reason_to_support",
-        "label": "What would make you most likely to purchase or keep a supporter tier?",
-        "type": "textarea",
+        "key": "comparison_to_before",
+        "label": "Compared with before the relocation, is your connection better or worse?",
+        "type": "select",
         "required": true,
-        "maxLength": 1200,
-        "options": []
+        "maxLength": 180,
+        "options": [
+          "Much better",
+          "Slightly better",
+          "About the same",
+          "Slightly worse",
+          "Much worse",
+          "I did not play before the relocation"
+        ]
       },
       {
-        "key": "additional_tier_feedback",
-        "label": "Any other thoughts, concerns, or ideas for supporter tiers?",
+        "key": "details",
+        "label": "Describe how the server feels to play and include any useful details about lag, delays, spikes, or disconnects.",
         "type": "textarea",
-        "required": false,
+        "required": true,
         "maxLength": 1200,
         "options": []
       }
