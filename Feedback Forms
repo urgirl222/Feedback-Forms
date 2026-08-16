@@ -1,300 +1,132 @@
-[
-  {
-    "id": "general_feedback",
-    "title": "General Feedback",
-    "description": "Share general feedback, suggestions, concerns, or ideas for Lusty Looters at any time. Discord login and a linked ARK account are required. This form does not award Gold Nuggets.",
-    "reward": 0,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": true,
-    "permanent": true,
-    "questions": [
-      {
-        "key": "feedback_area",
-        "label": "What is your feedback about?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "General server feedback",
-          "Website",
-          "Mods",
-          "Rates or settings",
-          "Events",
-          "Rules or clarity",
-          "Support experience",
-          "Other"
-        ]
-      },
-      {
-        "key": "feedback_message",
-        "label": "Tell us your feedback.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "improvement_idea",
-        "label": "What would you change or improve?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1000,
-        "options": []
-      }
-    ]
-  },
-  {
-    "id": "quest_ideas",
-    "title": "Quest Ideas",
-    "description": "Submit a detailed quest idea for Lusty Looters. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
-    "reward": 5000,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "quest_name",
-        "label": "What would you call this quest?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "quest_type",
-        "label": "What type of quest is it?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Exploration",
-          "Creature hunting or taming",
-          "Boss or combat",
-          "Building or crafting",
-          "Collection or delivery",
-          "Tribe or co-op",
-          "Puzzle or mystery",
-          "Event quest",
-          "Other"
-        ]
-      },
-      {
-        "key": "quest_concept",
-        "label": "Explain the quest idea and what makes it interesting.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1600,
-        "options": []
-      },
-      {
-        "key": "quest_steps",
-        "label": "What would players need to do to complete the quest? List the main steps or objectives.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1600,
-        "options": []
-      },
-      {
-        "key": "map_or_location",
-        "label": "Should this quest use a particular map, biome, cave, arena, or location?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 700,
-        "options": []
-      },
-      {
-        "key": "difficulty",
-        "label": "How difficult should the quest be?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Beginner",
-          "Easy",
-          "Medium",
-          "Hard",
-          "Endgame",
-          "Difficulty should scale",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "repeatability",
-        "label": "How often should players be able to complete it?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Once per player",
-          "Repeatable at any time",
-          "Daily",
-          "Weekly",
-          "Monthly",
-          "During events only",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "suggested_rewards",
-        "label": "What rewards should players receive for completing it?",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "balance_or_exploits",
-        "label": "Could the quest or its rewards be exploited? Explain any limits that might be needed.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "additional_details",
-        "label": "Add any other details that would help us understand or build the quest.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ]
-  },
-  {
-    "id": "server_ping_feedback",
-    "title": "How’s the Server Ping?",
-    "description": "Tell us how the server connection feels from your location. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
-    "reward": 5000,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "server_name",
-        "label": "Which server or map did you test?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "player_location",
-        "label": "What city, state, or country are you connecting from?",
-        "type": "text",
-        "required": true,
-        "maxLength": 160,
-        "options": []
-      },
-      {
-        "key": "platform",
-        "label": "What platform are you playing on?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Steam",
-          "Epic",
-          "Xbox",
-          "PlayStation",
-          "Windows Store",
-          "Other"
-        ]
-      },
-      {
-        "key": "connection_type",
-        "label": "How is your gaming device connected to the internet?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Ethernet",
-          "Wi-Fi",
-          "Mobile data or hotspot",
-          "Other",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "displayed_ping",
-        "label": "What ping does the server browser or in-game display usually show?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "connection_rating",
-        "label": "How would you rate the overall server connection?",
-        "type": "rating",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "issue_type",
-        "label": "What connection issue do you notice most?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "No noticeable issues",
-          "High ping",
-          "Ping spikes",
-          "Rubberbanding",
-          "Delayed actions or inventories",
-          "Disconnects",
-          "Crashes",
-          "Other"
-        ]
-      },
-      {
-        "key": "when_it_happens",
-        "label": "When do you usually notice the issue?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "I do not notice any issues",
-          "All the time",
-          "During busy hours",
-          "Near large bases",
-          "During boss fights or events",
-          "After restarts",
-          "Randomly"
-        ]
-      },
-      {
-        "key": "comparison_to_before",
-        "label": "Compared with before the relocation, is your connection better or worse?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Much better",
-          "Slightly better",
-          "About the same",
-          "Slightly worse",
-          "Much worse",
-          "I did not play before the relocation"
-        ]
-      },
-      {
-        "key": "details",
-        "label": "Describe how the server feels to play and include any useful details about lag, delays, spikes, or disconnects.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1200,
-        "options": []
-      }
-    ]
-  }
-]
+{
+  "id": "webstore_gold_nugget_topups",
+  "title": "Gold Nugget Webstore Top-Ups",
+  "description": "We are considering adding optional Gold Nugget top-ups to the Lusty Looters webstore and want feedback from the entire community before making a decision. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+  "reward": 5000,
+  "enabled": true,
+  "repeatDays": 0,
+  "allowedDiscordIds": [],
+  "publicSubmission": false,
+  "allowRepeatSubmissions": false,
+  "permanent": false,
+  "questions": [
+    {
+      "key": "support_level",
+      "label": "Would you support adding optional Gold Nugget top-ups to the webstore?",
+      "type": "select",
+      "required": true,
+      "maxLength": 180,
+      "options": [
+        "Strongly support",
+        "Support",
+        "Neutral or unsure",
+        "Do not support",
+        "Strongly oppose"
+      ]
+    },
+    {
+      "key": "reason_for_answer",
+      "label": "Please explain the reason for your answer.",
+      "type": "textarea",
+      "required": true,
+      "maxLength": 1200,
+      "options": []
+    },
+    {
+      "key": "purchase_likelihood",
+      "label": "How likely would you be to purchase a Gold Nugget top-up?",
+      "type": "rating",
+      "required": true,
+      "maxLength": 180,
+      "options": []
+    },
+    {
+      "key": "preferred_package_size",
+      "label": "What size Gold Nugget package would interest you most?",
+      "type": "select",
+      "required": true,
+      "maxLength": 180,
+      "options": [
+        "5,000 Gold Nuggets",
+        "10,000 Gold Nuggets",
+        "25,000 Gold Nuggets",
+        "50,000 Gold Nuggets",
+        "100,000 Gold Nuggets",
+        "More than 100,000 Gold Nuggets",
+        "I would not purchase a top-up",
+        "Unsure"
+      ]
+    },
+    {
+      "key": "fair_pricing",
+      "label": "What prices would you consider fair for the Gold Nugget package sizes you selected?",
+      "type": "textarea",
+      "required": false,
+      "maxLength": 700,
+      "options": []
+    },
+    {
+      "key": "acceptable_use",
+      "label": "Which option best describes how purchased Gold Nuggets should be handled?",
+      "type": "select",
+      "required": true,
+      "maxLength": 180,
+      "options": [
+        "They can be used on all existing Gold Nugget purchases",
+        "They should only be used for cosmetic or convenience purchases",
+        "They are acceptable if purchase limits are applied",
+        "They are acceptable if they do not provide a competitive advantage",
+        "Gold Nuggets should only be earned through gameplay and community activities",
+        "Unsure"
+      ]
+    },
+    {
+      "key": "purchase_limits",
+      "label": "Should Gold Nugget top-ups have purchase limits?",
+      "type": "select",
+      "required": true,
+      "maxLength": 180,
+      "options": [
+        "No purchase limit",
+        "A weekly purchase limit",
+        "A monthly purchase limit",
+        "Only smaller packages should be available",
+        "Top-ups should not be sold",
+        "Unsure"
+      ]
+    },
+    {
+      "key": "biggest_concern",
+      "label": "What would be your biggest concern about Gold Nugget top-ups?",
+      "type": "select",
+      "required": true,
+      "maxLength": 180,
+      "options": [
+        "Pay-to-win or unfair advantages",
+        "Impact on the server economy",
+        "Devaluing voting, quests, or other rewards",
+        "Top-up prices being too expensive",
+        "Players purchasing excessive amounts",
+        "Payment or delivery problems",
+        "I have no major concerns",
+        "Other"
+      ]
+    },
+    {
+      "key": "current_earning_satisfaction",
+      "label": "How satisfied are you with the current ways of earning Gold Nuggets?",
+      "type": "rating",
+      "required": true,
+      "maxLength": 180,
+      "options": []
+    },
+    {
+      "key": "additional_feedback",
+      "label": "What rules, limits, package sizes, prices, or safeguards would make this system fair for the community?",
+      "type": "textarea",
+      "required": false,
+      "maxLength": 1400,
+      "options": []
+    }
+  ]
+}
