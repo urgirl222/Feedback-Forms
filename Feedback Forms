@@ -50,7 +50,7 @@
     "id": "quest_ideas",
     "title": "Quest Ideas",
     "description": "Submit a detailed quest idea for Lusty Looters. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
-    "reward": 5000,
+    "reward": 15000,
     "enabled": true,
     "repeatDays": 0,
     "allowedDiscordIds": [],
