@@ -428,5 +428,161 @@
         "options": []
       }
     ]
+  },
+  {
+    "id": "marketplace_price_rebalance_feedback",
+    "title": "Marketplace Price Rebalance Feedback",
+    "description": "Share your feedback on the Lusty Looters Marketplace price rebalance. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "reward": 5000,
+    "enabled": true,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "overall_rebalance_opinion",
+        "label": "What is your overall opinion of the Marketplace price rebalance?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Strongly support",
+          "Support",
+          "Neutral or unsure",
+          "Do not support",
+          "Strongly oppose"
+        ]
+      },
+      {
+        "key": "general_price_balance",
+        "label": "How do the updated Marketplace prices feel overall?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Still much too cheap",
+          "Slightly too cheap",
+          "About right",
+          "Slightly too expensive",
+          "Much too expensive",
+          "I have not reviewed enough items"
+        ]
+      },
+      {
+        "key": "category_needing_attention",
+        "label": "Which Marketplace category needs the most additional adjustment?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Potions",
+          "Kibble",
+          "Brews and food",
+          "Armour sets",
+          "Equipment kits or equipment",
+          "Cyber Structures",
+          "Player commands",
+          "Tribute items",
+          "Loot Drops",
+          "Quest Resets",
+          "Miscellaneous items or ammunition",
+          "No category needs adjustment",
+          "Other"
+        ]
+      },
+      {
+        "key": "potion_price_balance",
+        "label": "How do the updated potion prices feel?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Still much too cheap",
+          "Slightly too cheap",
+          "About right",
+          "Slightly too expensive",
+          "Much too expensive",
+          "I do not purchase potions"
+        ]
+      },
+      {
+        "key": "potion_drop_price_balance",
+        "label": "How do the updated Potion Drop prices feel?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Still much too cheap",
+          "Slightly too cheap",
+          "About right",
+          "Slightly too expensive",
+          "Much too expensive",
+          "I do not purchase Potion Drops"
+        ]
+      },
+      {
+        "key": "specific_item_feedback",
+        "label": "List any specific item that is still too cheap or too expensive. Include its current price and the price you would recommend.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1500,
+        "options": []
+      },
+      {
+        "key": "earning_and_spending_balance",
+        "label": "Compared with how quickly you earn Gold Nuggets, how difficult are Marketplace purchases now?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Purchases are still earned far too quickly",
+          "Purchases are earned slightly too quickly",
+          "Earning and spending feel balanced",
+          "Purchases now take slightly too long",
+          "Purchases now take far too long",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "purchase_impact",
+        "label": "How will these changes affect how you use the Marketplace?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "I will save for purchases more carefully",
+          "I will focus more on quests and voting",
+          "I will purchase fewer powerful items",
+          "My Marketplace use will stay about the same",
+          "The new prices will discourage me from using the Marketplace",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "quest_reset_price_balance",
+        "label": "How do the updated Daily and Weekly Quest Reset prices feel?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Still too cheap",
+          "About right",
+          "Too expensive",
+          "Daily Reset should change",
+          "Weekly Reset should change",
+          "I do not purchase Quest Resets"
+        ]
+      },
+      {
+        "key": "additional_price_feedback",
+        "label": "What other Marketplace pricing changes would make the economy feel fair and worthwhile?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      }
+    ]
   }
 ]
