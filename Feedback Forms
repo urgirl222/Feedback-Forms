@@ -168,7 +168,7 @@
   },
   {
     "id": "server_ping_feedback",
-    "title": "How’s the Server Ping?",
+    "title": "How\u2019s the Server Ping?",
     "description": "Tell us how the server connection feels from your location. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
     "reward": 5000,
     "enabled": true,
@@ -581,6 +581,218 @@
         "type": "textarea",
         "required": false,
         "maxLength": 1400,
+        "options": []
+      }
+    ]
+  },
+  {
+    "id": "custom_alpha_feedback",
+    "title": "Custom Alpha Feedback",
+    "description": "Help decide what direction Lusty Looters should take with Alphas before the new system is released. Tell us whether you would prefer improved normal Alphas, completely new Custom Alphas, a mix of both, and what difficulty, rewards and features would make them worth fighting. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "reward": 5000,
+    "enabled": true,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "preferred_alpha_direction",
+        "label": "What would you most like us to do with Alphas?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Keep normal ARK Alphas and only improve their rewards",
+          "Keep normal ARK Alphas but make them stronger and improve their rewards",
+          "Add new Custom Alphas alongside normal ARK Alphas",
+          "Replace normal ARK Alphas with new Custom Alphas",
+          "Use a mix of improved normal Alphas and new Custom Alphas",
+          "Keep Alphas mostly as they are now",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "alpha_system_appeal",
+        "label": "How interested are you in a new Custom Alpha system overall?",
+        "type": "rating",
+        "required": true,
+        "maxLength": 180,
+        "options": []
+      },
+      {
+        "key": "difficulty_style",
+        "label": "How should Alpha difficulty work?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Normal Alpha difficulty with better rewards",
+          "Slightly stronger than normal Alphas",
+          "Clear Easy, Medium and Hard tiers",
+          "Difficulty should depend on the creature",
+          "Mostly difficult with rare endgame-level Alphas",
+          "A mix of easier and extremely difficult Alphas",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "alpha_power_level",
+        "label": "How powerful should the strongest Custom Alphas be?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Only a little stronger than normal Alphas",
+          "Strong but manageable with a good tame",
+          "Very strong and require prepared high-end tames",
+          "Extremely strong and intended for groups or endgame players",
+          "It should vary heavily by Alpha difficulty",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "spawn_frequency",
+        "label": "How often should Custom Alphas appear?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Fairly common with smaller rewards",
+          "About as often as normal Alphas",
+          "Rarer than normal Alphas with better rewards",
+          "Very rare with very strong rewards",
+          "Different spawn rates for Easy, Medium and Hard Alphas",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "most_important_feature",
+        "label": "What should be the most important difference between normal Alphas and Custom Alphas?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Much better rewards",
+          "Higher health and damage",
+          "New creatures becoming Alphas",
+          "Different Easy, Medium and Hard difficulty tiers",
+          "Unique colours, size or appearance",
+          "More aggressive behaviour and larger aggro range",
+          "Special mechanics or abilities",
+          "A mixture of all of these",
+          "Other"
+        ]
+      },
+      {
+        "key": "preferred_rewards",
+        "label": "What should Custom Alpha rewards focus on most?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Gold Nuggets",
+          "High-quality saddles",
+          "Armour",
+          "Resources",
+          "Kibble or consumables",
+          "Rare or unique items",
+          "A random mixture of rewards",
+          "Different rewards depending on Alpha difficulty",
+          "Other"
+        ]
+      },
+      {
+        "key": "reward_strength",
+        "label": "How rewarding should Custom Alphas be compared with normal Alphas?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Only slightly better",
+          "Noticeably better",
+          "Much better because they are much harder",
+          "Very high rewards but only if Custom Alphas are rare",
+          "Rewards should scale heavily with difficulty",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "supporter_bonus",
+        "label": "How should Supporter ranks affect Custom Alpha rewards?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "No Supporter bonus",
+          "Small Supporter bonus",
+          "Moderate Supporter bonus",
+          "Strong Supporter bonus",
+          "Higher ranks should progressively improve rewards",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "structure_damage",
+        "label": "Should Custom Alphas be able to damage player structures?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "No structure damage",
+          "Normal creature structure damage",
+          "Increased structure damage",
+          "Only Medium and Hard Alphas should seriously threaten structures",
+          "Yes, strong structure damage should be part of the danger",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "turret_damage",
+        "label": "Should turrets be able to damage Custom Alphas?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes, normally",
+          "Yes, but with reduced effectiveness",
+          "Only against Easy Alphas",
+          "No, players should have to fight them directly",
+          "Different rules depending on Alpha difficulty",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "new_alpha_creatures",
+        "label": "What creatures would you like to see become new Custom Alphas?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "reward_ideas",
+        "label": "What specific rewards would make Custom Alphas worth hunting?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "concerns",
+        "label": "What would make Custom Alphas frustrating, unfair or not worth fighting?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "additional_alpha_feedback",
+        "label": "Add any other ideas for how the Alpha system should work.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1600,
         "options": []
       }
     ]
