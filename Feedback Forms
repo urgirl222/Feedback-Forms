@@ -44,7 +44,19 @@
         "maxLength": 1000,
         "options": []
       }
-    ]
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "",
+      "extra": "",
+      "color": "#2582ee"
+    }
   },
   {
     "id": "quest_ideas",
@@ -164,11 +176,23 @@
         "maxLength": 1200,
         "options": []
       }
-    ]
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
   },
   {
     "id": "server_ping_feedback",
-    "title": "How\u2019s the Server Ping?",
+    "title": "How’s the Server Ping?",
     "description": "Tell us how the server connection feels from your location. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
     "reward": 5000,
     "enabled": true,
@@ -295,7 +319,19 @@
         "maxLength": 1200,
         "options": []
       }
-    ]
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
   },
   {
     "id": "webstore_gold_nugget_topups",
@@ -427,7 +463,19 @@
         "maxLength": 1400,
         "options": []
       }
-    ]
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
   },
   {
     "id": "marketplace_price_rebalance_feedback",
@@ -583,7 +631,19 @@
         "maxLength": 1400,
         "options": []
       }
-    ]
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
   },
   {
     "id": "custom_alpha_feedback",
@@ -795,6 +855,169 @@
         "maxLength": 1600,
         "options": []
       }
-    ]
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
+  },
+  {
+    "id": "store_harvesting_boosts_random_dinos_feedback",
+    "title": "Harvesting Boosts and Random Dino Feedback",
+    "description": "Share your feedback on the new harvesting multiplier boosts and random dino products in the Lusty Looters store. Completing this form awards 15,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "reward": 15000,
+    "enabled": true,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "product_experience",
+        "label": "Which of these store products have you used?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Harvesting boosts only",
+          "Random dinos only",
+          "Both harvesting boosts and random dinos",
+          "Neither yet"
+        ]
+      },
+      {
+        "key": "harvesting_value",
+        "label": "How do the harvesting boost prices and available durations feel?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very good value",
+          "Good value",
+          "About right",
+          "Poor value",
+          "Very poor value",
+          "I have not reviewed the prices"
+        ]
+      },
+      {
+        "key": "harvesting_clarity",
+        "label": "How clear are the harvesting multipliers, durations, exclusions and activation instructions?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very clear",
+          "Mostly clear",
+          "Some details are unclear",
+          "Very unclear",
+          "I have not reviewed the product information"
+        ]
+      },
+      {
+        "key": "harvesting_experience",
+        "label": "If you have used a harvesting boost, tell us which multiplier, duration and map you used. Did it activate correctly and give the harvesting results you expected? Include any problems you noticed.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "random_dino_value",
+        "label": "How do the random dino package prices feel?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very good value",
+          "Good value",
+          "About right",
+          "Poor value",
+          "Very poor value",
+          "I have not reviewed the prices"
+        ]
+      },
+      {
+        "key": "random_dino_clarity",
+        "label": "How clear is the information about which dinos you could receive, their levels or stats, and how delivery works?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very clear",
+          "Mostly clear",
+          "Some details are unclear",
+          "Very unclear",
+          "I have not reviewed the product information"
+        ]
+      },
+      {
+        "key": "random_dino_pool",
+        "label": "What do you think of the selection of dinos available in the random dino pool?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very appealing",
+          "Mostly appealing",
+          "A mixed selection",
+          "Mostly unappealing",
+          "Very unappealing",
+          "I have not reviewed the dino pool"
+        ]
+      },
+      {
+        "key": "random_dino_experience",
+        "label": "If you have purchased random dinos, tell us which package you bought and what you received. Were you happy with the result, and did delivery work correctly?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "store_product_balance",
+        "label": "How do these products affect fairness and progression on the cluster?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "They feel fair and balanced",
+          "Mostly fair, with a few concerns",
+          "Neutral or unsure",
+          "They give too much of an advantage",
+          "They offer too little benefit for the price",
+          "I have not reviewed the products enough"
+        ]
+      },
+      {
+        "key": "recommended_improvements",
+        "label": "What should we improve about harvesting boosts or random dinos? Explain what you like or dislike, and include any suggested prices, durations, dinos, exclusions or delivery changes.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1600,
+        "options": []
+      }
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your store feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed.\n\nHere is your code:\n**LL-88SK-4TH3-Z7EK-A862**\n\nThanks for helping improve the Lusty Looters store.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.\n\nHere is your code:\n**LL-88SK-4TH3-Z7EK-A862**\n\nThanks for helping improve the Lusty Looters store.",
+      "extra": "",
+      "color": "#2582ee"
+    }
   }
 ]
