@@ -872,7 +872,7 @@
   {
     "id": "store_harvesting_boosts_random_dinos_feedback",
     "title": "Harvesting Boosts and Random Dino Feedback",
-    "description": "Share your feedback on the new harvesting multiplier boosts and random dino products in the Lusty Looters store. Completing this form awards 15,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "description": "Share your feedback on the new harvesting multiplier boosts and random dino products in the Lusty Looters store. Completing this form awards 15,000 Gold Nuggets, and a $15 Store Gift Card. Discord login and a linked ARK account are required.",
     "reward": 15000,
     "enabled": true,
     "repeatDays": 0,
