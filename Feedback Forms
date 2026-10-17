@@ -334,9 +334,9 @@
     }
   },
   {
-    "id": "webstore_gold_nugget_topups",
-    "title": "Gold Nugget Webstore Top-Ups",
-    "description": "We are considering adding optional Gold Nugget top-ups to the Lusty Looters webstore and want feedback from the entire community before making a decision. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "id": "future_webstore_items_feedback",
+    "title": "Future Webstore Items",
+    "description": "Tell us which optional items or services you would actually want in the Lusty Looters webstore, what would feel worth buying, and what should stay fair for everyone. Completing this form awards 5,000 Gold Nuggets and a Webstore Dino reward once. Discord login and a linked ARK account are required.",
     "reward": 5000,
     "enabled": true,
     "repeatDays": 0,
@@ -346,127 +346,123 @@
     "permanent": false,
     "questions": [
       {
-        "key": "support_level",
-        "label": "Would you support adding optional Gold Nugget top-ups to the webstore?",
+        "key": "store_purchase_history",
+        "label": "How often have you bought something from the Lusty Looters webstore?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Strongly support",
-          "Support",
-          "Neutral or unsure",
-          "Do not support",
-          "Strongly oppose"
+          "Never",
+          "Once",
+          "A few times",
+          "Regularly",
+          "Prefer not to say"
         ]
       },
       {
-        "key": "reason_for_answer",
-        "label": "Please explain the reason for your answer.",
+        "key": "most_interesting_category",
+        "label": "Which type of new store item interests you most?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Cosmetics or character customisation",
+          "Building and decoration",
+          "Creature-related items or services",
+          "Convenience or time savers",
+          "Harvesting or progression boosts",
+          "Gold Nuggets",
+          "Server-wide boosts or events",
+          "Something else",
+          "No new items interest me"
+        ]
+      },
+      {
+        "key": "specific_item_idea",
+        "label": "What specific item or service would you like to see? If none interest you, tell us why.",
         "type": "textarea",
         "required": true,
+        "maxLength": 1400,
+        "options": []
+      },
+      {
+        "key": "main_reason",
+        "label": "What makes that idea appealing or unappealing to you?",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1000,
+        "options": []
+      },
+      {
+        "key": "acceptable_price",
+        "label": "What price would feel reasonable for that item or service? Use AUD if you can.",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Under $5",
+          "$5–$10",
+          "$11–$20",
+          "$21–$35",
+          "More than $35",
+          "It depends on the item",
+          "I would not buy it"
+        ]
+      },
+      {
+        "key": "purchase_barrier",
+        "label": "What is the biggest reason you might decide not to buy a new store item?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Price",
+          "Unclear value or contents",
+          "Concern about game balance",
+          "Delivery or reliability concerns",
+          "I do not need more items",
+          "I do not buy from game stores",
+          "Something else"
+        ]
+      },
+      {
+        "key": "fairness_preference",
+        "label": "What level of gameplay benefit feels acceptable for a new store item?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Cosmetic only",
+          "Minor convenience",
+          "Moderate convenience",
+          "Stronger boosts with clear limits",
+          "It depends on the item",
+          "No new paid items",
+          "Unsure"
+        ]
+      },
+      {
+        "key": "existing_store_changes",
+        "label": "Is there an existing store item you would change, improve, or remove?",
+        "type": "textarea",
+        "required": false,
         "maxLength": 1200,
         "options": []
       },
       {
-        "key": "purchase_likelihood",
-        "label": "How likely would you be to purchase a Gold Nugget top-up?",
-        "type": "rating",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "preferred_package_size",
-        "label": "What size Gold Nugget package would interest you most?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "5,000 Gold Nuggets",
-          "10,000 Gold Nuggets",
-          "25,000 Gold Nuggets",
-          "50,000 Gold Nuggets",
-          "100,000 Gold Nuggets",
-          "More than 100,000 Gold Nuggets",
-          "I would not purchase a top-up",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "fair_pricing",
-        "label": "What prices would you consider fair for the Gold Nugget package sizes you selected?",
+        "key": "other_store_ideas",
+        "label": "Any other ideas, limits, or concerns about future webstore items?",
         "type": "textarea",
         "required": false,
-        "maxLength": 700,
-        "options": []
-      },
-      {
-        "key": "acceptable_use",
-        "label": "Which option best describes how purchased Gold Nuggets should be handled?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "They can be used on all existing Gold Nugget purchases",
-          "They should only be used for cosmetic or convenience purchases",
-          "They are acceptable if purchase limits are applied",
-          "They are acceptable if they do not provide a competitive advantage",
-          "Gold Nuggets should only be earned through gameplay and community activities",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "purchase_limits",
-        "label": "Should Gold Nugget top-ups have purchase limits?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "No purchase limit",
-          "A weekly purchase limit",
-          "A monthly purchase limit",
-          "Only smaller packages should be available",
-          "Top-ups should not be sold",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "biggest_concern",
-        "label": "What would be your biggest concern about Gold Nugget top-ups?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Pay-to-win or unfair advantages",
-          "Impact on the server economy",
-          "Devaluing voting, quests, or other rewards",
-          "Top-up prices being too expensive",
-          "Players purchasing excessive amounts",
-          "Payment or delivery problems",
-          "I have no major concerns",
-          "Other"
-        ]
-      },
-      {
-        "key": "current_earning_satisfaction",
-        "label": "How satisfied are you with the current ways of earning Gold Nuggets?",
-        "type": "rating",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "additional_feedback",
-        "label": "What rules, limits, package sizes, prices, or safeguards would make this system fair for the community?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1400,
+        "maxLength": 1200,
         "options": []
       }
     ],
     "rconReward": {
-      "label": "",
-      "commands": []
+      "label": "Webstore Dino reward",
+      "commands": [
+        "RA.Reward {{eosId}} WebstoreDino1"
+      ]
     },
     "overseerEmbed": {
       "enabled": true,
@@ -870,10 +866,10 @@
     }
   },
   {
-    "id": "store_harvesting_boosts_random_dinos_feedback",
-    "title": "Harvesting Boosts and Random Dino Feedback",
-    "description": "Share your feedback on the new harvesting multiplier boosts and random dino products in the Lusty Looters store. Completing this form awards 15,000 Gold Nuggets, and a $15 Store Gift Card. Discord login and a linked ARK account are required.",
-    "reward": 15000,
+    "id": "harvesting_boost_value_feedback",
+    "title": "Harvesting Boost Value and Duration",
+    "description": "Help us decide whether lower prices, longer durations, or higher harvesting rates would make webstore harvesting boosts feel more worthwhile. Completing this form awards 5,000 Gold Nuggets and a Webstore Dino reward once. Discord login and a linked ARK account are required.",
+    "reward": 5000,
     "enabled": true,
     "repeatDays": 0,
     "allowedDiscordIds": [],
@@ -882,140 +878,149 @@
     "permanent": false,
     "questions": [
       {
-        "key": "product_experience",
-        "label": "Which of these store products have you used?",
+        "key": "boost_purchase_history",
+        "label": "Have you bought a harvesting boost from the Lusty Looters webstore?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Harvesting boosts only",
-          "Random dinos only",
-          "Both harvesting boosts and random dinos",
-          "Neither yet"
+          "Yes, more than once",
+          "Yes, once",
+          "No, but I have considered it",
+          "No, I am not interested"
         ]
       },
       {
-        "key": "harvesting_value",
-        "label": "How do the harvesting boost prices and available durations feel?",
+        "key": "current_boost_value",
+        "label": "How do the current harvesting boosts feel for their price?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Very good value",
+          "Excellent value",
           "Good value",
           "About right",
           "Poor value",
           "Very poor value",
-          "I have not reviewed the prices"
+          "I have not reviewed them"
         ]
       },
       {
-        "key": "harvesting_clarity",
-        "label": "How clear are the harvesting multipliers, durations, exclusions and activation instructions?",
+        "key": "best_value_change",
+        "label": "Which single change would most improve their value for you?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Very clear",
-          "Mostly clear",
-          "Some details are unclear",
-          "Very unclear",
-          "I have not reviewed the product information"
+          "Lower price at the current rate and duration",
+          "Longer duration at the current price and rate",
+          "Higher harvesting rate at the current price and duration",
+          "A smaller mix of these changes",
+          "Current offers are fine",
+          "None would interest me",
+          "Unsure"
         ]
       },
       {
-        "key": "harvesting_experience",
-        "label": "If you have used a harvesting boost, tell us which multiplier, duration and map you used. Did it activate correctly and give the harvesting results you expected? Include any problems you noticed.",
+        "key": "lower_price_impact",
+        "label": "If the price were lower but the rate and duration stayed the same, would you be more likely to buy?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Much more likely",
+          "Somewhat more likely",
+          "No change",
+          "Less likely",
+          "I would not buy a boost"
+        ]
+      },
+      {
+        "key": "longer_duration_impact",
+        "label": "If the duration were longer but the price and rate stayed the same, would you be more likely to buy?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Much more likely",
+          "Somewhat more likely",
+          "No change",
+          "Less likely",
+          "I would not buy a boost"
+        ]
+      },
+      {
+        "key": "higher_rate_impact",
+        "label": "If the harvesting rate were higher but the price and duration stayed the same, would you be more likely to buy?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Much more likely",
+          "Somewhat more likely",
+          "No change",
+          "Less likely",
+          "I would not buy a boost"
+        ]
+      },
+      {
+        "key": "ideal_boost_offer",
+        "label": "Describe a boost you would consider good value. Include the price, duration, and harvesting rate you would expect.",
         "type": "textarea",
-        "required": false,
+        "required": true,
         "maxLength": 1400,
         "options": []
       },
       {
-        "key": "random_dino_value",
-        "label": "How do the random dino package prices feel?",
+        "key": "preferred_duration",
+        "label": "What boost duration would you most often use?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Very good value",
-          "Good value",
-          "About right",
-          "Poor value",
-          "Very poor value",
-          "I have not reviewed the prices"
+          "A few hours",
+          "One day",
+          "Two to three days",
+          "One week",
+          "Longer than one week",
+          "It depends on the rate or price",
+          "I would not use a boost"
         ]
       },
       {
-        "key": "random_dino_clarity",
-        "label": "How clear is the information about which dinos you could receive, their levels or stats, and how delivery works?",
+        "key": "balance_concern",
+        "label": "How concerned are you that stronger or longer boosts could affect server balance?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Very clear",
-          "Mostly clear",
-          "Some details are unclear",
-          "Very unclear",
-          "I have not reviewed the product information"
+          "Not concerned",
+          "Slightly concerned",
+          "Moderately concerned",
+          "Very concerned",
+          "Unsure"
         ]
       },
       {
-        "key": "random_dino_pool",
-        "label": "What do you think of the selection of dinos available in the random dino pool?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Very appealing",
-          "Mostly appealing",
-          "A mixed selection",
-          "Mostly unappealing",
-          "Very unappealing",
-          "I have not reviewed the dino pool"
-        ]
-      },
-      {
-        "key": "random_dino_experience",
-        "label": "If you have purchased random dinos, tell us which package you bought and what you received. Were you happy with the result, and did delivery work correctly?",
+        "key": "other_boost_feedback",
+        "label": "What else would make harvesting boosts clearer, fairer, or better value?",
         "type": "textarea",
         "required": false,
-        "maxLength": 1400,
-        "options": []
-      },
-      {
-        "key": "store_product_balance",
-        "label": "How do these products affect fairness and progression on the cluster?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "They feel fair and balanced",
-          "Mostly fair, with a few concerns",
-          "Neutral or unsure",
-          "They give too much of an advantage",
-          "They offer too little benefit for the price",
-          "I have not reviewed the products enough"
-        ]
-      },
-      {
-        "key": "recommended_improvements",
-        "label": "What should we improve about harvesting boosts or random dinos? Explain what you like or dislike, and include any suggested prices, durations, dinos, exclusions or delivery changes.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1600,
+        "maxLength": 1200,
         "options": []
       }
     ],
     "rconReward": {
-      "label": "",
-      "commands": []
+      "label": "Webstore Dino reward",
+      "commands": [
+        "RA.Reward {{eosId}} WebstoreDino1"
+      ]
     },
     "overseerEmbed": {
       "enabled": true,
-      "title": "Thanks for your store feedback, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed.\n\nHere is your code:\n**LL-88SK-4TH3-Z7EK-A862**\n\nThanks for helping improve the Lusty Looters store.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.\n\nHere is your code:\n**LL-88SK-4TH3-Z7EK-A862**\n\nThanks for helping improve the Lusty Looters store.",
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
       "extra": "",
       "color": "#2582ee"
     }
