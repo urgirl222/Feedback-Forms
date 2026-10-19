@@ -1024,5 +1024,68 @@
       "extra": "",
       "color": "#2582ee"
     }
+  },
+  {
+    "id": "how_did_you_find_us",
+    "title": "How Did You Find Us?",
+    "description": "Tell us how you found Lusty Looters and help us understand where new players are coming from. Completing this form awards 25,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
+    "reward": 25000,
+    "enabled": true,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "discovery_source",
+        "label": "Where did you first find Lusty Looters?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "ARK in-game server browser",
+          "Facebook",
+          "Discord",
+          "Reddit",
+          "Google or another search engine",
+          "Server listing or voting website",
+          "YouTube",
+          "TikTok",
+          "Twitch or another livestream",
+          "A friend or tribe member",
+          "Other",
+          "I cannot remember"
+        ]
+      },
+      {
+        "key": "source_details",
+        "label": "If you found us on Discord, a voting site, Reddit, Facebook or another page, which server, site, subreddit, group or page was it? Add a name or link.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 600,
+        "options": []
+      },
+      {
+        "key": "reason_for_joining",
+        "label": "What made you decide to join Lusty Looters?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 600,
+        "options": []
+      }
+    ],
+    "rconReward": {
+      "label": "",
+      "commands": []
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping us understand how players find Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
   }
 ]
