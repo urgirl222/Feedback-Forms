@@ -1,5 +1,103 @@
 [
   {
+    "id": "economy_rebalance_feedback",
+    "title": "Economy Rebalance Feedback",
+    "description": "Tell us how the new shop prices, potion changes and tribute pack removal affect your gameplay. If you have not tried the changes yet, say so. Complete this form once to receive 35,000 Gold Nuggets and a Small Potion Bundle containing 5 random potions. Discord login and a linked ARK account are required.",
+    "reward": 35000,
+    "enabled": true,
+    "repeatDays": 0,
+    "allowedDiscordIds": [],
+    "publicSubmission": false,
+    "allowRepeatSubmissions": false,
+    "permanent": false,
+    "questions": [
+      {
+        "key": "rebalance_experience",
+        "label": "Have you tried the economy changes yet?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Yes, I have bought items since the changes",
+          "Yes, I have sold items since the changes",
+          "Yes, I have bought and sold items since the changes",
+          "I have looked at the changes but have not tried them",
+          "I have not looked at or tried the changes yet"
+        ]
+      },
+      {
+        "key": "items_and_prices",
+        "label": "Which changed items have you bought or tried? Which prices feel too high or too low, and why? If you have not tried the changes yet, say so.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "main_nugget_income",
+        "label": "How do you mainly earn Gold Nuggets? Be honest. We can check the logs.",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Selling Red Gems",
+          "Selling Element",
+          "Selling boss trophies",
+          "Quests",
+          "Voting",
+          "Passive playtime rewards",
+          "Events, giveaways or special creature rewards",
+          "Trading with other players",
+          "Supporter rewards or webstore purchases",
+          "Other source or a mix of sources",
+          "I have not earned or received Gold Nuggets yet"
+        ]
+      },
+      {
+        "key": "active_hourly_earnings",
+        "label": "Since the changes, roughly how many Gold Nuggets do you earn in one hour of active play? Exclude webstore purchases, supporter payouts and gifts.",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Under 500",
+          "500 to 1,999",
+          "2,000 to 4,999",
+          "5,000 to 9,999",
+          "10,000 to 24,999",
+          "25,000 to 49,999",
+          "50,000 to 99,999",
+          "100,000 or more",
+          "I have played but have not measured my earnings",
+          "I have not earned Nuggets since the changes",
+          "I have not tried the changes yet"
+        ]
+      },
+      {
+        "key": "balance_bypasses",
+        "label": "Have you found any crafting recipes, rewards or other ways that bypass these changes? Explain what you found. Leave blank if none or you have not tried them.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1600,
+        "options": []
+      }
+    ],
+    "rconReward": {
+      "label": "Small Potion Bundle (5 random potions)",
+      "commands": [
+        "RA.Reward {{eosId}} WebstorePotionSmallBundle"
+      ]
+    },
+    "overseerEmbed": {
+      "enabled": true,
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** have been processed. Thanks for helping us review the economy changes.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** reward needs a staff check. We will follow up here.",
+      "extra": "",
+      "color": "#2582ee"
+    }
+  },
+  {
     "id": "general_feedback",
     "title": "General Feedback",
     "description": "Share general feedback, suggestions, concerns, or ideas for Lusty Looters at any time. Discord login and a linked ARK account are required. This form does not award Gold Nuggets.",
