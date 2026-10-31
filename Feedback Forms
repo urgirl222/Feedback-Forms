@@ -595,8 +595,7 @@
         "maxLength": 180,
         "options": [
           "Yes, they used to grow here",
-          "No, this area has always seemed empty",
-          "I am not sure"
+          "No, this area has always seemed empty"
         ]
       },
       {
