@@ -595,7 +595,8 @@
         "maxLength": 180,
         "options": [
           "Yes, they used to grow here",
-          "No, this area has always seemed empty"
+          "No, this area has always seemed empty",
+          "I am not sure"
         ]
       },
       {
@@ -612,6 +613,22 @@
         "type": "textarea",
         "required": true,
         "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "cs_changes_around_onset",
+        "label": "Did you add, replace or move any Cyber Structures (CS) structures around the time the resource respawning problem first appeared? List which structures, what changed and roughly when. If you cannot remember, say so.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "comparison_unaffected_base",
+        "label": "Do you have another base where resources still respawn normally? If so, are its Cyber Structures (CS) structures different from your affected base? Describe what each base has, including any structures that are present at only one base. If you have no unaffected base to compare, say so.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1400,
         "options": []
       },
       {
