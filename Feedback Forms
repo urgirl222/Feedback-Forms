@@ -633,17 +633,11 @@
       },
       {
         "key": "affected_area",
-        "label": "How far from your base do resources appear to be missing?",
-        "type": "select",
+        "label": "Approximately how many metres from the nearest part of your base (walls, foundations or other structures) do resources start respawning again? Give your best estimate in metres (e.g. 20 m, 50 m, 100 m or 200 m). If you cannot estimate, write \"Unsure\".",
+        "type": "text",
         "required": true,
         "maxLength": 180,
-        "options": [
-          "Only inside the base",
-          "Just outside the walls / foundations",
-          "A large cleared area surrounding the base",
-          "Across much of the nearby area",
-          "I am not sure"
-        ]
+        "options": []
       },
       {
         "key": "before_radius_changes",
