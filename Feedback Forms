@@ -1,8 +1,8 @@
 [
   {
-    "id": "economy_rebalance_feedback",
-    "title": "Economy Rebalance Feedback",
-    "description": "Tell us how the new shop prices, potion changes and tribute pack removal affect your gameplay. If you have not tried the changes yet, say so. Complete this form once to receive 35,000 Gold Nuggets and a Small Potion Bundle containing 5 random potions. Discord login and a linked ARK account are required.",
+    "id": "daily_quest_rework_feedback",
+    "title": "Daily Quest Rework Feedback",
+    "description": "We are reviewing 121 proposed daily quests before they go live. We want to know which quests need work, especially anything that cannot be completed on your map. The plan is for every daily to pay 5,000 Gold Nuggets and to remove Reset Dailies from the store. Weekly and permanent quests will be reviewed later, and store prices may be adjusted after that. Read the proposal before answering where possible. Complete this form once to receive 35,000 Gold Nuggets and a Small Potion Bundle (5 random potions). Discord login and a linked ARK account are required.",
     "reward": 35000,
     "enabled": true,
     "repeatDays": 0,
@@ -12,73 +12,146 @@
     "permanent": false,
     "questions": [
       {
-        "key": "rebalance_experience",
-        "label": "Have you tried the economy changes yet?",
+        "key": "read_quest_proposal",
+        "label": "Have you looked through the proposed daily quest list?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Yes, I have bought items since the changes",
-          "Yes, I have sold items since the changes",
-          "Yes, I have bought and sold items since the changes",
-          "I have looked at the changes but have not tried them",
-          "I have not looked at or tried the changes yet"
+          "Yes, I read most or all of it",
+          "Yes, I looked at a few sections",
+          "Not yet, but I know the main changes",
+          "No, I have not seen the proposal"
         ]
       },
       {
-        "key": "items_and_prices",
-        "label": "Which changed items have you bought or tried? Which prices feel too high or too low, and why? If you have not tried the changes yet, say so.",
-        "type": "textarea",
+        "key": "main_map",
+        "label": "Which map do you mainly play on?",
+        "type": "select",
         "required": true,
+        "maxLength": 180,
+        "options": [
+          "The Island",
+          "Scorched Earth",
+          "The Center",
+          "Aberration",
+          "Extinction",
+          "Ragnarok",
+          "Valguero",
+          "Astraeos",
+          "Lost Colony",
+          "Genesis Part 1",
+          "I play several maps equally",
+          "Other / not listed"
+        ]
+      },
+      {
+        "key": "main_concern",
+        "label": "Which part of the daily quest rework needs the most attention?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Biome hunting quests",
+          "Individual creature hunts",
+          "Creature class hunts",
+          "Resource gathering",
+          "Crafting",
+          "Special and mixed quests",
+          "Gold Nugget rewards and economy",
+          "Reset Dailies removal",
+          "Quest names or descriptions",
+          "Nothing stands out",
+          "Not sure yet"
+        ]
+      },
+      {
+        "key": "map_compatibility",
+        "label": "Are any quests impossible or very difficult to complete on your map? Give the quest number/name, map, and what is missing. Leave blank if none.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1600,
+        "options": []
+      },
+      {
+        "key": "kill_requirements",
+        "label": "How do the proposed kill objectives feel, including 20-kill biome hunts and shared creature counters?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Too easy / too quick",
+          "About right",
+          "Too difficult / too time-consuming",
+          "Some are fine, but others need changing",
+          "I have not checked the hunting quests"
+        ]
+      },
+      {
+        "key": "gathering_requirements",
+        "label": "How do the proposed gathering amounts feel: 25,000 common materials and roughly 3,000–5,000 rare materials?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Too low overall",
+          "About right overall",
+          "Too high overall",
+          "Common resources seem fine, but rare materials are too high",
+          "Some need individual adjustments",
+          "I have not checked the gathering quests"
+        ]
+      },
+      {
+        "key": "gathering_details",
+        "label": "If any gathering requirements look off (especially Keratin, Black Pearls or Organic Polymer), which ones and what amount would you use?",
+        "type": "textarea",
+        "required": false,
         "maxLength": 1200,
         "options": []
       },
       {
-        "key": "main_nugget_income",
-        "label": "How do you mainly earn Gold Nuggets? Be honest. We can check the logs.",
+        "key": "daily_reward",
+        "label": "Every daily is planned to reward a flat 5,000 Gold Nuggets, regardless of the quest. What do you think?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Selling Red Gems",
-          "Selling Element",
-          "Selling boss trophies",
-          "Quests",
-          "Voting",
-          "Passive playtime rewards",
-          "Events, giveaways or special creature rewards",
-          "Trading with other players",
-          "Supporter rewards or webstore purchases",
-          "Other source or a mix of sources",
-          "I have not earned or received Gold Nuggets yet"
+          "Too low",
+          "About right",
+          "Too high",
+          "Rewards should vary with difficulty or time",
+          "Not sure yet"
         ]
       },
       {
-        "key": "active_hourly_earnings",
-        "label": "Since the changes, roughly how many Gold Nuggets do you earn in one hour of active play? Exclude webstore purchases, supporter payouts and gifts.",
+        "key": "reset_dailies",
+        "label": "The Reset Dailies option is planned to be removed from the store. What do you think?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Under 500",
-          "500 to 1,999",
-          "2,000 to 4,999",
-          "5,000 to 9,999",
-          "10,000 to 24,999",
-          "25,000 to 49,999",
-          "50,000 to 99,999",
-          "100,000 or more",
-          "I have played but have not measured my earnings",
-          "I have not earned Nuggets since the changes",
-          "I have not tried the changes yet"
+          "Support removing it",
+          "Prefer to keep it",
+          "Keep it, but with limits or a higher price",
+          "No preference",
+          "I have never used Reset Dailies"
         ]
       },
       {
-        "key": "balance_bypasses",
-        "label": "Have you found any crafting recipes, rewards or other ways that bypass these changes? Explain what you found. Leave blank if none or you have not tried them.",
+        "key": "quest_name_changes",
+        "label": "Do any quest names or descriptions need changing? Include quest numbers if possible. Leave blank if none.",
         "type": "textarea",
         "required": false,
-        "maxLength": 1600,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "other_feedback",
+        "label": "What else would you change before the daily quest update goes live? Be specific where you can. Weekly/permanent quests and shop balance will be reviewed separately later.",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1400,
         "options": []
       }
     ],
@@ -90,8 +163,8 @@
     },
     "overseerEmbed": {
       "enabled": true,
-      "title": "Thanks for your feedback, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** have been processed. Thanks for helping us review the economy changes.",
+      "title": "Thanks for reviewing the quests, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** have been processed. Thanks for helping us improve the daily quests.",
       "reviewMessage": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** reward needs a staff check. We will follow up here.",
       "extra": "",
       "color": "#2582ee"
