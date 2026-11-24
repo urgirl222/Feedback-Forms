@@ -1,9 +1,9 @@
 [
   {
-    "id": "daily_quest_rework_feedback",
-    "title": "Daily Quest Rework Feedback",
-    "description": "We are reviewing 121 proposed daily quests before they go live. We want to know which quests need work, especially anything that cannot be completed on your map. The plan is for every daily to pay 5,000 Gold Nuggets and to remove Reset Dailies from the store. Weekly and permanent quests will be reviewed later, and store prices may be adjusted after that. Read the proposal before answering where possible. Complete this form once to receive 35,000 Gold Nuggets and a Small Potion Bundle (5 random potions). Discord login and a linked ARK account are required.",
-    "reward": 35000,
+    "id": "what_do_you_think_of_us",
+    "title": "What Do You Think of Us?",
+    "description": "Tell us what you think of Lusty Looters: what you enjoy, what frustrates you, and what we should improve. Honest feedback is welcome, whether positive, negative, or mixed. Completing this form awards 10,000 Gold Nuggets and a Small Potion Bundle (5 random potions) once, regardless of your opinion. Discord login and a linked ARK account are required.",
+    "reward": 10000,
     "enabled": true,
     "repeatDays": 0,
     "allowedDiscordIds": [],
@@ -12,146 +12,147 @@
     "permanent": false,
     "questions": [
       {
-        "key": "read_quest_proposal",
-        "label": "Have you looked through the proposed daily quest list?",
+        "key": "time_on_cluster",
+        "label": "How long have you been playing on Lusty Looters?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Yes, I read most or all of it",
-          "Yes, I looked at a few sections",
-          "Not yet, but I know the main changes",
-          "No, I have not seen the proposal"
+          "Less than a week",
+          "1–4 weeks",
+          "1–3 months",
+          "More than 3 months",
+          "I have joined but have not played much yet"
         ]
       },
       {
-        "key": "main_map",
-        "label": "Which map do you mainly play on?",
+        "key": "overall_experience",
+        "label": "Overall, how would you rate your experience with Lusty Looters?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "The Island",
-          "Scorched Earth",
-          "The Center",
-          "Aberration",
-          "Extinction",
-          "Ragnarok",
-          "Valguero",
-          "Astraeos",
-          "Lost Colony",
-          "Genesis Part 1",
-          "I play several maps equally",
-          "Other / not listed"
+          "1 — Very poor",
+          "2 — Poor",
+          "3 — Average",
+          "4 — Good",
+          "5 — Excellent",
+          "Not enough experience to say"
         ]
       },
       {
-        "key": "main_concern",
-        "label": "Which part of the daily quest rework needs the most attention?",
+        "key": "server_stability",
+        "label": "How has server stability and performance been for you recently?",
         "type": "select",
         "required": true,
         "maxLength": 180,
         "options": [
-          "Biome hunting quests",
-          "Individual creature hunts",
-          "Creature class hunts",
-          "Resource gathering",
-          "Crafting",
-          "Special and mixed quests",
-          "Gold Nugget rewards and economy",
-          "Reset Dailies removal",
-          "Quest names or descriptions",
-          "Nothing stands out",
-          "Not sure yet"
+          "Very poor — frequent crashes, lag, or connection issues",
+          "Poor — regular issues affect my play",
+          "Mixed — some sessions are fine, others have issues",
+          "Good — occasional minor issues",
+          "Excellent — consistently smooth and reliable",
+          "Not enough experience to say"
         ]
       },
       {
-        "key": "map_compatibility",
-        "label": "Are any quests impossible or very difficult to complete on your map? Give the quest number/name, map, and what is missing. Leave blank if none.",
+        "key": "gameplay_balance",
+        "label": "How do the rates, progression, quests, and Gold Nugget economy feel overall?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Far too easy or generous",
+          "Slightly too easy or generous",
+          "About right",
+          "Slightly too difficult or restrictive",
+          "Far too difficult or restrictive",
+          "Mixed — different parts need different changes",
+          "Not enough experience to say"
+        ]
+      },
+      {
+        "key": "community_experience",
+        "label": "How has your experience with the Lusty Looters community been?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very negative",
+          "Mostly negative",
+          "Mixed or neutral",
+          "Mostly positive",
+          "Very positive",
+          "I have not interacted with the community enough to say"
+        ]
+      },
+      {
+        "key": "staff_support",
+        "label": "If you have needed help, how satisfied were you with the support from staff?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very dissatisfied",
+          "Dissatisfied",
+          "Neither satisfied nor dissatisfied",
+          "Satisfied",
+          "Very satisfied",
+          "I have not needed staff support",
+          "I am still waiting for help"
+        ]
+      },
+      {
+        "key": "website_experience",
+        "label": "How easy is it to use our website, account linking, and store?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Very difficult",
+          "Somewhat difficult",
+          "Mixed — some features are easier than others",
+          "Mostly easy",
+          "Very easy",
+          "I have not used them enough to say"
+        ]
+      },
+      {
+        "key": "what_you_like",
+        "label": "What do you enjoy most about Lusty Looters, and what should we keep?",
+        "type": "textarea",
+        "required": false,
+        "maxLength": 1200,
+        "options": []
+      },
+      {
+        "key": "what_to_improve",
+        "label": "What should we improve first, and why? Mention specific issues, maps, features, or experiences where possible. If nothing comes to mind, say so.",
+        "type": "textarea",
+        "required": true,
+        "maxLength": 1800,
+        "options": []
+      },
+      {
+        "key": "would_recommend",
+        "label": "Would you recommend Lusty Looters to another ARK player?",
+        "type": "select",
+        "required": true,
+        "maxLength": 180,
+        "options": [
+          "Definitely not",
+          "Probably not",
+          "Unsure",
+          "Probably yes",
+          "Definitely yes"
+        ]
+      },
+      {
+        "key": "anything_else",
+        "label": "Is there anything else you want us to know? You can also explain any of your ratings here.",
         "type": "textarea",
         "required": false,
         "maxLength": 1600,
-        "options": []
-      },
-      {
-        "key": "kill_requirements",
-        "label": "How do the proposed kill objectives feel, including 20-kill biome hunts and shared creature counters?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Too easy / too quick",
-          "About right",
-          "Too difficult / too time-consuming",
-          "Some are fine, but others need changing",
-          "I have not checked the hunting quests"
-        ]
-      },
-      {
-        "key": "gathering_requirements",
-        "label": "How do the proposed gathering amounts feel: 25,000 common materials and roughly 3,000–5,000 rare materials?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Too low overall",
-          "About right overall",
-          "Too high overall",
-          "Common resources seem fine, but rare materials are too high",
-          "Some need individual adjustments",
-          "I have not checked the gathering quests"
-        ]
-      },
-      {
-        "key": "gathering_details",
-        "label": "If any gathering requirements look off (especially Keratin, Black Pearls or Organic Polymer), which ones and what amount would you use?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "daily_reward",
-        "label": "Every daily is planned to reward a flat 5,000 Gold Nuggets, regardless of the quest. What do you think?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Too low",
-          "About right",
-          "Too high",
-          "Rewards should vary with difficulty or time",
-          "Not sure yet"
-        ]
-      },
-      {
-        "key": "reset_dailies",
-        "label": "The Reset Dailies option is planned to be removed from the store. What do you think?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Support removing it",
-          "Prefer to keep it",
-          "Keep it, but with limits or a higher price",
-          "No preference",
-          "I have never used Reset Dailies"
-        ]
-      },
-      {
-        "key": "quest_name_changes",
-        "label": "Do any quest names or descriptions need changing? Include quest numbers if possible. Leave blank if none.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "other_feedback",
-        "label": "What else would you change before the daily quest update goes live? Be specific where you can. Weekly/permanent quests and shop balance will be reviewed separately later.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1400,
         "options": []
       }
     ],
@@ -163,9 +164,9 @@
     },
     "overseerEmbed": {
       "enabled": true,
-      "title": "Thanks for reviewing the quests, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** have been processed. Thanks for helping us improve the daily quests.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **35,000 Gold Nuggets and Small Potion Bundle (5 random potions)** reward needs a staff check. We will follow up here.",
+      "title": "Thanks for your feedback, {{playerName}}!",
+      "message": "We saved your response to **{{formTitle}}**. Your **10,000 Gold Nuggets and Small Potion Bundle (5 random potions)** have been processed. Thanks for sharing your honest feedback about Lusty Looters.",
+      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **10,000 Gold Nuggets and Small Potion Bundle (5 random potions)** reward needs a staff check. We will follow up here.",
       "extra": "",
       "color": "#2582ee"
     }
@@ -225,533 +226,6 @@
       "title": "Thanks for your feedback, {{playerName}}!",
       "message": "We saved your response to **{{formTitle}}**. Thanks for helping shape Lusty Looters.",
       "reviewMessage": "",
-      "extra": "",
-      "color": "#2582ee"
-    }
-  },
-  {
-    "id": "quest_ideas",
-    "title": "Quest Ideas",
-    "description": "Submit a detailed quest idea for Lusty Looters. Complete, useful submissions award 5,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
-    "reward": 15000,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "quest_name",
-        "label": "What would you call this quest?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "quest_type",
-        "label": "What type of quest is it?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Exploration",
-          "Creature hunting or taming",
-          "Boss or combat",
-          "Building or crafting",
-          "Collection or delivery",
-          "Tribe or co-op",
-          "Puzzle or mystery",
-          "Event quest",
-          "Other"
-        ]
-      },
-      {
-        "key": "quest_concept",
-        "label": "Explain the quest idea and what makes it interesting.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1600,
-        "options": []
-      },
-      {
-        "key": "quest_steps",
-        "label": "What would players need to do to complete the quest? List the main steps or objectives.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1600,
-        "options": []
-      },
-      {
-        "key": "map_or_location",
-        "label": "Should this quest use a particular map, biome, cave, arena, or location?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 700,
-        "options": []
-      },
-      {
-        "key": "difficulty",
-        "label": "How difficult should the quest be?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Beginner",
-          "Easy",
-          "Medium",
-          "Hard",
-          "Endgame",
-          "Difficulty should scale",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "repeatability",
-        "label": "How often should players be able to complete it?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Once per player",
-          "Repeatable at any time",
-          "Daily",
-          "Weekly",
-          "Monthly",
-          "During events only",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "suggested_rewards",
-        "label": "What rewards should players receive for completing it?",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "balance_or_exploits",
-        "label": "Could the quest or its rewards be exploited? Explain any limits that might be needed.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "additional_details",
-        "label": "Add any other details that would help us understand or build the quest.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ],
-    "rconReward": {
-      "label": "",
-      "commands": []
-    },
-    "overseerEmbed": {
-      "enabled": true,
-      "title": "Thanks for your feedback, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
-      "extra": "",
-      "color": "#2582ee"
-    }
-  },
-  {
-    "id": "future_webstore_items_feedback",
-    "title": "Future Webstore Items",
-    "description": "Tell us which optional items or services you would actually want in the Lusty Looters webstore, what would feel worth buying, and what should stay fair for everyone. Completing this form awards 5,000 Gold Nuggets and a Webstore Dino reward once. Discord login and a linked ARK account are required.",
-    "reward": 5000,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "store_purchase_history",
-        "label": "How often have you bought something from the Lusty Looters webstore?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Never",
-          "Once",
-          "A few times",
-          "Regularly",
-          "Prefer not to say"
-        ]
-      },
-      {
-        "key": "most_interesting_category",
-        "label": "Which type of new store item interests you most?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Cosmetics or character customisation",
-          "Building and decoration",
-          "Creature-related items or services",
-          "Convenience or time savers",
-          "Harvesting or progression boosts",
-          "Gold Nuggets",
-          "Server-wide boosts or events",
-          "Something else",
-          "No new items interest me"
-        ]
-      },
-      {
-        "key": "specific_item_idea",
-        "label": "What specific item or service would you like to see? If none interest you, tell us why.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1400,
-        "options": []
-      },
-      {
-        "key": "main_reason",
-        "label": "What makes that idea appealing or unappealing to you?",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1000,
-        "options": []
-      },
-      {
-        "key": "acceptable_price",
-        "label": "What price would feel reasonable for that item or service? Use AUD if you can.",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Under $5",
-          "$5–$10",
-          "$11–$20",
-          "$21–$35",
-          "More than $35",
-          "It depends on the item",
-          "I would not buy it"
-        ]
-      },
-      {
-        "key": "purchase_barrier",
-        "label": "What is the biggest reason you might decide not to buy a new store item?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Price",
-          "Unclear value or contents",
-          "Concern about game balance",
-          "Delivery or reliability concerns",
-          "I do not need more items",
-          "I do not buy from game stores",
-          "Something else"
-        ]
-      },
-      {
-        "key": "fairness_preference",
-        "label": "What level of gameplay benefit feels acceptable for a new store item?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Cosmetic only",
-          "Minor convenience",
-          "Moderate convenience",
-          "Stronger boosts with clear limits",
-          "It depends on the item",
-          "No new paid items",
-          "Unsure"
-        ]
-      },
-      {
-        "key": "existing_store_changes",
-        "label": "Is there an existing store item you would change, improve, or remove?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "other_store_ideas",
-        "label": "Any other ideas, limits, or concerns about future webstore items?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ],
-    "rconReward": {
-      "label": "Webstore Dino reward",
-      "commands": [
-        "RA.Reward {{eosId}} WebstoreDino1"
-      ]
-    },
-    "overseerEmbed": {
-      "enabled": true,
-      "title": "Thanks for your feedback, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping shape Lusty Looters.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
-      "extra": "",
-      "color": "#2582ee"
-    }
-  },
-  {
-    "id": "how_did_you_find_us",
-    "title": "How Did You Find Us?",
-    "description": "Tell us how you found Lusty Looters and help us understand where new players are coming from. Completing this form awards 25,000 Gold Nuggets once. Discord login and a linked ARK account are required.",
-    "reward": 25000,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "discovery_source",
-        "label": "Where did you first find Lusty Looters?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "ARK in-game server browser",
-          "Facebook",
-          "Discord",
-          "Reddit",
-          "Google or another search engine",
-          "Server listing or voting website",
-          "YouTube",
-          "TikTok",
-          "Twitch or another livestream",
-          "A friend or tribe member",
-          "Other",
-          "I cannot remember"
-        ]
-      },
-      {
-        "key": "source_details",
-        "label": "If you found us on Discord, a voting site, Reddit, Facebook or another page, which server, site, subreddit, group or page was it? Add a name or link.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 600,
-        "options": []
-      },
-      {
-        "key": "reason_for_joining",
-        "label": "What made you decide to join Lusty Looters?",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 600,
-        "options": []
-      }
-    ],
-    "rconReward": {
-      "label": "",
-      "commands": []
-    },
-    "overseerEmbed": {
-      "enabled": true,
-      "title": "Thanks for your feedback, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your reward, **{{reward}}**, has been processed. Thanks for helping us understand how players find Lusty Looters.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **{{reward}}** reward needs a staff check. We will follow up here.",
-      "extra": "",
-      "color": "#2582ee"
-    }
-  },
-  {
-    "id": "website_device_usage",
-    "title": "Website Device Usage",
-    "description": "Tell us which device you usually use to visit the Lusty Looters website so we can improve how it works across different screens. Complete this form once to receive a Small Potion Bundle containing 5 random potions. Discord login and a linked ARK account are required.",
-    "reward": 0,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "primary_device",
-        "label": "Which device do you use most often to access the Lusty Looters website?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Mobile phone (iPhone)",
-          "Mobile phone (Android)",
-          "Desktop computer",
-          "Laptop computer",
-          "Tablet (iPad or Android tablet)",
-          "Gaming console browser",
-          "Other device",
-          "I have not used the website"
-        ]
-      },
-      {
-        "key": "device_feedback",
-        "label": "Is there anything difficult to use or display on your device? (Optional)",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ],
-    "rconReward": {
-      "label": "Small Potion Bundle (5 random potions)",
-      "commands": [
-        "RA.Reward {{eosId}} WebstorePotionSmallBundle"
-      ]
-    },
-    "overseerEmbed": {
-      "enabled": true,
-      "title": "Thanks for your feedback, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your **Small Potion Bundle (5 random potions)** has been processed. Thanks for helping us improve the Lusty Looters website.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **Small Potion Bundle (5 random potions)** reward needs a staff check. We will follow up here.",
-      "extra": "",
-      "color": "#2582ee"
-    }
-  },
-  {
-    "id": "resource_respawn_near_bases",
-    "title": "Resources Not Respawning Near Bases",
-    "description": "We are investigating reports of trees, rocks, bushes and other resources not respawning around player bases. Tell us what you have noticed, which Cyber Structures (CS) structures you have built, and roughly when it first started. If you do not remember an exact date, an estimate is fine. Complete this form once to receive 25,000 Gold Nuggets and a Large Potion Bundle (25 random potions). Discord login and a linked ARK account are required.",
-    "reward": 25000,
-    "enabled": true,
-    "repeatDays": 0,
-    "allowedDiscordIds": [],
-    "publicSubmission": false,
-    "allowRepeatSubmissions": false,
-    "permanent": false,
-    "questions": [
-      {
-        "key": "affected_map",
-        "label": "Which map is your affected base on?",
-        "type": "text",
-        "required": true,
-        "maxLength": 120,
-        "options": []
-      },
-      {
-        "key": "base_location",
-        "label": "Where is the affected base? Include approximate map coordinates (lat/long), or a nearby landmark if you cannot find the coordinates.",
-        "type": "text",
-        "required": true,
-        "maxLength": 300,
-        "options": []
-      },
-      {
-        "key": "affected_resources",
-        "label": "Which resources appear to be missing or not respawning?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Trees",
-          "Rocks / metal / crystal",
-          "Bushes / plants",
-          "Several different resource types",
-          "Other resources",
-          "I am not sure"
-        ]
-      },
-      {
-        "key": "previously_present",
-        "label": "Do you remember these resources growing at this location before?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Yes, they used to grow here",
-          "No, this area has always seemed empty",
-          "I am not sure"
-        ]
-      },
-      {
-        "key": "first_noticed",
-        "label": "When did you first notice the problem? Try to remember the earliest date, week or month you can. If you are unsure, give your best estimate and mention that it is approximate.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 600,
-        "options": []
-      },
-      {
-        "key": "cs_structures",
-        "label": "Which Cyber Structures (CS) structures do you have inside or immediately around your base? List their exact names/types and approximate quantities if possible. If you do not use any Cyber Structures, write \"None\".",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "cs_changes_around_onset",
-        "label": "Did you add, replace or move any Cyber Structures (CS) structures around the time the resource respawning problem first appeared? List which structures, what changed and roughly when. If you cannot remember, say so.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1200,
-        "options": []
-      },
-      {
-        "key": "comparison_unaffected_base",
-        "label": "Do you have another base where resources still respawn normally? If so, are its Cyber Structures (CS) structures different from your affected base? Describe what each base has, including any structures that are present at only one base. If you have no unaffected base to compare, say so.",
-        "type": "textarea",
-        "required": true,
-        "maxLength": 1400,
-        "options": []
-      },
-      {
-        "key": "affected_area",
-        "label": "Approximately how many metres from the nearest part of your base (walls, foundations or other structures) do resources start respawning again? Give your best estimate in metres (e.g. 20 m, 50 m, 100 m or 200 m). If you cannot estimate, write \"Unsure\".",
-        "type": "text",
-        "required": true,
-        "maxLength": 180,
-        "options": []
-      },
-      {
-        "key": "before_radius_changes",
-        "label": "Was the issue already happening before the recent resource respawn radius changes?",
-        "type": "select",
-        "required": true,
-        "maxLength": 180,
-        "options": [
-          "Yes, it was happening before the changes",
-          "No, I first noticed it after the changes",
-          "I do not know / cannot remember"
-        ]
-      },
-      {
-        "key": "other_structures",
-        "label": "Do you have any other modded structures, large foundations, platforms, or unusual building pieces in or near the affected area? Include names if known.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 900,
-        "options": []
-      },
-      {
-        "key": "extra_evidence",
-        "label": "Anything else we should know? Include screenshot/video links, whether resources respawn normally away from your base, or whether other nearby bases are affected.",
-        "type": "textarea",
-        "required": false,
-        "maxLength": 1200,
-        "options": []
-      }
-    ],
-    "rconReward": {
-      "label": "Large Potion Bundle (25 random potions)",
-      "commands": [
-        "RA.Reward {{eosId}} WebstorePotionLargeBundle"
-      ]
-    },
-    "overseerEmbed": {
-      "enabled": true,
-      "title": "Thanks for your report, {{playerName}}!",
-      "message": "We saved your response to **{{formTitle}}**. Your **25,000 Gold Nuggets and Large Potion Bundle (25 random potions)** have been processed. Thanks for helping us investigate resource respawning near bases.",
-      "reviewMessage": "We saved your response to **{{formTitle}}**. Your **25,000 Gold Nuggets and Large Potion Bundle (25 random potions)** reward needs a staff check. We will follow up here.",
       "extra": "",
       "color": "#2582ee"
     }
